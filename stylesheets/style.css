@@ -1,0 +1,211 @@
+/*--- Default styling ---*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: black;
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 2.7rem;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    font-size: 0.95rem;
+}
+
+ul {
+    margin: 0;
+}
+
+p {
+    line-height: 30px;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*.main-pickup-item {
+    padding-bottom: 20px;
+}
+
+/*--- Reusable Classes ---*/
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.h2-title {
+    padding: 30px 0px;
+    position: relative;
+}
+
+.h2-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+  }
+
+  .main-pickup-item-text >p {
+    font-size: 0.85rem;
+    line-height: 1.3rem;
+  }
+
+  .main-pickup-item-text >p {
+    font-size: 0.85rem;
+    line-height: 1.3rem;
+  }
+/*--- Header ---*/
+  .header {
+    display: flex;  /* フレックスボックスを有効にして子要素を水平に配置 */
+    align-items: center;  /* 子要素を垂直方向の中央に配置 */
+    justify-content: space-between;  /* 子要素を左右端に配置 */
+    width: 100%;
+    height: 53px;
+    position: fixed; /* ヘッダーが追従するように設定 */
+    z-index: 2;
+    background-color: #FFFFFF;
+    border-bottom: 3px solid;  /* 下部にボーダー（グラデーションライン）を設定 */
+    border-image: linear-gradient(to left, rgb(255, 11, 174), yellow, transparent);  /* 左から右へのグラデーションラインを設定 */
+    border-image-slice: 1;  /* ボーダー画像の表示範囲を設定 */
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05); /* ヘッダーに影（立体感）を追加 */
+  }
+
+  .header-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-nav-menu {
+    display: flex;
+    list-style: none;
+    font-weight: 600;
+  }
+
+  .header-nav-menu-item > a:hover ,
+  .header-nav-menu-item > a:focus {
+    color: black;
+  }
+
+
+/*--- Main hero ---*/
+
+ .main-hero {
+    background-color: gainsboro;
+    padding-bottom: 20px;
+    padding-top: 53px; 
+    height: 540px;
+ }
+
+ .main-hero-highlight-links a{
+    background: linear-gradient(to left, rgba(253, 138, 228, 0.822), rgb(253, 253, 141));
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 20px;
+ }
+
+/*--- Main about ---*/
+ .main-about {
+    background-color: #FFFFFF;
+ }
+
+ .main-about-item-img-content > p {
+ color: #C6C124;  /* 暗めの黄色 */
+ }
+
+/*--- Main pickup ---*/
+
+.main-pickup {
+    background: linear-gradient(to left, rgba(253, 138, 228, 0.822), rgb(253, 253, 141));
+    color: black;
+ }
+
+ .button-detail-1 {
+    background: linear-gradient(to left, rgba(253, 138, 228, 0.822), rgb(253, 253, 141));
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 20px;
+ }
+/*--- Main point ---*/
+.main-point {
+    background-color: #FFFFFF;
+    color: black;
+ }
+
+h5 {
+    color: #C6C124;  /* 暗めの黄色 */
+}
+
+.button-contact {
+    display: inline-block;
+    background-color: #F4F47A;
+    color: black;
+    border-radius: 4px;
+    padding: 10px 20px;
+  }
+/*--- Main blog ---*/
+.main-blog {
+    background: linear-gradient(to left, #F3F68D, #91B7EA);
+    color: black;
+ }
+ .button-detail-2 {
+    background: linear-gradient(to left, #F3F68D, #91B7EA);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 20px;
+ }
+
+/*--- Main bot ---*/
+.main-bot {
+    background-color: #FFFFFF;
+    color: black;
+ }
+
+.main-bot-item {
+    color: #C6C124;  /* 暗めの黄色 */
+}
+/*--- footer ---*/
+.footer {
+    background-color: #F9F9F9;
+}
+
+.footer-nav-menu ul{
+    display: flex;
+    list-style: none;
+  }
+
+.footer-security {
+    display: flex;
+}
