@@ -27,6 +27,15 @@ h3 {
     font-size: 0.95rem;
 }
 
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    color: #C6C124;  /* 暗めの黄色 */
+    font-size: 1.6rem;
+}
+
 ul {
     margin: 0;
 }
@@ -57,6 +66,15 @@ a {
     margin: 0 auto;
 }
 
+.h2-title-polygon {
+text-align: center;
+padding: 2px 0px;
+background-color: #FFF9BD;  /* 薄い黄色 */
+margin: -50px auto 50px;  /* 上マージンを負の値にしてセクション1の底と接触させる */
+clip-path: polygon(0 0, 100% 0, 75% 100%, 25% 100%);  /* 上底の方が下底より大きい台形 */
+width: 33%;  /* 横幅を画面の三分の一に変更 */
+}
+
 .h2-title {
     padding: 30px 0px;
     position: relative;
@@ -80,6 +98,11 @@ a {
   .main-pickup-item-text >p {
     font-size: 0.85rem;
     line-height: 1.3rem;
+  }
+
+  .main-point-item-text-list {
+    font-size: 1.1rem;
+    line-height: 2.5rem;
   }
 /*--- Header ---*/
   .header {
@@ -120,7 +143,7 @@ a {
     background-color: gainsboro;
     padding-bottom: 20px;
     padding-top: 53px; 
-    height: 540px;
+    height: 600px;
  }
 
  .main-hero-highlight-links a{
@@ -148,6 +171,12 @@ a {
     color: black;
  }
 
+ .button-container {
+    text-align: center;
+    padding: 22px;
+    padding-bottom: 32px;
+ }
+
  .button-detail-1 {
     background: linear-gradient(to left, rgba(253, 138, 228, 0.822), rgb(253, 253, 141));
     color: black;
@@ -156,15 +185,23 @@ a {
     cursor: pointer;
     padding: 10px 20px;
  }
+
+ .main-pickup-item {
+    margin: 100px 0px;
+ }
+
+ .main-pickup-item-1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
 /*--- Main point ---*/
 .main-point {
     background-color: #FFFFFF;
     color: black;
  }
 
-h5 {
-    color: #C6C124;  /* 暗めの黄色 */
-}
+
 
 .button-contact {
     display: inline-block;
@@ -173,6 +210,26 @@ h5 {
     border-radius: 4px;
     padding: 10px 20px;
   }
+
+.main-point-item-text {
+    text-align: center;
+}
+
+.main-point-item-text >h4 {
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.main-point-item-text >h4::after {
+    content: "";
+    position: absolute;
+    left: 25%;
+    bottom: -1px;
+    width: 50%;
+    height: 2px;
+    background-color: #FFE13F;
+  }
+
 /*--- Main blog ---*/
 .main-blog {
     background: linear-gradient(to left, #F3F68D, #91B7EA);
