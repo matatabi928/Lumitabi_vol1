@@ -14,9 +14,9 @@ body {
 
 h1 {
     margin-top: 0;
-    font-size: 2.7rem;
+    font-size: 3.4rem;
     font-weight: 600;
-    line-height: 60px;
+    line-height: 80px;
 }
 
 h2 {
@@ -70,7 +70,7 @@ a {
 text-align: center;
 padding: 2px 0px;
 background-color: #FFF9BD;  /* 薄い黄色 */
-margin: -50px auto 50px;  /* 上マージンを負の値にしてセクション1の底と接触させる */
+margin: auto;  /* 上マージンを負の値にしてセクション1の底と接触させる */
 clip-path: polygon(0 0, 100% 0, 75% 100%, 25% 100%);  /* 上底の方が下底より大きい台形 */
 width: 33%;  /* 横幅を画面の三分の一に変更 */
 }
@@ -104,6 +104,11 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
     font-size: 1.1rem;
     line-height: 2.5rem;
   }
+
+  .main-blog-item-text >p {
+    font-size: 0.85rem;
+    line-height: 1.3rem;
+  }
 /*--- Header ---*/
   .header {
     display: flex;  /* フレックスボックスを有効にして子要素を水平に配置 */
@@ -128,7 +133,6 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
   .header-nav-menu {
     display: flex;
     list-style: none;
-    font-weight: 600;
   }
 
   .header-nav-menu-item > a:hover ,
@@ -139,11 +143,15 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
 
 /*--- Main hero ---*/
 
- .main-hero {
-    background-color: gainsboro;
-    padding-bottom: 20px;
+#halo {
+    height: 700px;
     padding-top: 53px; 
-    height: 600px;
+}
+
+ .main-hero {
+    background-color: black;
+    padding-bottom: 20px;
+    height: 700px;
  }
 
  .main-hero-highlight-links a{
@@ -157,13 +165,20 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
 
 /*--- Main about ---*/
  .main-about {
-    background-color: #FFFFFF;
+    background-color: black;
+    background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.3), rgba(255, 255, 0, 0.1));
+
  }
 
  .main-about-item-img-content > p {
  color: #C6C124;  /* 暗めの黄色 */
  }
 
+ .main-about-item-img img {
+    max-width: 80%;
+    height: auto;
+
+ }
 /*--- Main pickup ---*/
 
 .main-pickup {
@@ -173,8 +188,7 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
 
  .button-container {
     text-align: center;
-    padding: 22px;
-    padding-bottom: 32px;
+    padding-top: 22px;
  }
 
  .button-detail-1 {
@@ -199,9 +213,8 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
 .main-point {
     background-color: #FFFFFF;
     color: black;
+    background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.3), rgba(255, 255, 0, 0.1));
  }
-
-
 
 .button-contact {
     display: inline-block;
@@ -244,15 +257,65 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
     padding: 10px 20px;
  }
 
+ .main-blog-item-content{
+    text-align: center;
+ }
+
+ .main-blog-item {
+    margin-top: 100px ;
+    padding-bottom: 50px;
+ }
+
+ .main-blog-item-1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
 /*--- Main bot ---*/
 .main-bot {
+    background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.3), rgba(255, 255, 0, 0.1));
     background-color: #FFFFFF;
     color: black;
  }
 
-.main-bot-item {
+ .main-bot-item >p {
+    margin-top: 0;
+    font-size: 3.4rem;
+    font-weight: 600;
+    line-height: 80px;
     color: #C6C124;  /* 暗めの黄色 */
+ }
+
+.scroll-to-top-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #F4F47A;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
+
+.arrow-up {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    transform: rotate(-135deg);
+    margin-right: 5px;
+  }
+  
+  .scroll-to-top-btn:hover {
+    background-color: #F4F47A;
+  }
+
 /*--- footer ---*/
 .footer {
     background-color: #F9F9F9;
