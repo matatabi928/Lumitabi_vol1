@@ -13,6 +13,8 @@ body {
 }
 
 h1 {
+    color: #F9F9F9;
+    text-shadow: 1px 1px 2px #000000; /* 縁の色とぼかしの設定 */
     margin-top: 0;
     font-size: 3.4rem;
     font-weight: 600;
@@ -118,11 +120,18 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
     height: 53px;
     position: fixed; /* ヘッダーが追従するように設定 */
     z-index: 2;
-    background-color: #FFFFFF;
     border-bottom: 3px solid;  /* 下部にボーダー（グラデーションライン）を設定 */
     border-image: linear-gradient(to left, rgb(255, 11, 174), yellow, transparent);  /* 左から右へのグラデーションラインを設定 */
     border-image-slice: 1;  /* ボーダー画像の表示範囲を設定 */
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05); /* ヘッダーに影（立体感）を追加 */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+  .header.colorized {
+    background-color: white; /* 色付きの背景色 */
+    color: black; /* 色付きのテキスト色 */
+    
+
   }
 
   .header-logo {
@@ -135,24 +144,41 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
     list-style: none;
   }
 
+  .header-nav-menu-item a {
+    color: white; /* 最初の文字の色を変更する */
+    font-weight: 600;
+    text-shadow: 1px 1px 2px #000000; /* 縁の色とぼかしの設定 */
+
+  }
+
   .header-nav-menu-item > a:hover ,
   .header-nav-menu-item > a:focus {
-    color: black;
+    color: #F3F68D;
   }
 
 
 /*--- Main hero ---*/
 
-#halo {
+/*#halo {
     height: 700px;
     padding-top: 53px; 
-}
+}*/
+
 
  .main-hero {
-    background-color: black;
+    background-color: gainsboro;
     padding-bottom: 20px;
-    height: 700px;
+    height: 765px;
  }
+
+ .main-img{
+    background-image: url('../images/dreamy-universal-light.jpg');  /* 画像のURLを指定     */
+    background-position:left top;                     /* 画像の表示位置を指定 */
+    background-size:cover;                                 /* 画像のサイズを指定  */
+    width:100%;                                            /* 横幅のサイズを指定  */
+    height:765px;                                          /* 縦幅のサイズを指定  */
+    padding-top: 53px; 
+}
 
  .main-hero-highlight-links a{
     background: linear-gradient(to left, rgba(253, 138, 228, 0.822), rgb(253, 253, 141));
@@ -161,6 +187,7 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
     border-radius: 4px;
     cursor: pointer;
     padding: 10px 20px;
+    
  }
 
 /*--- Main about ---*/
@@ -280,10 +307,11 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
 
  .main-bot-item >p {
     margin-top: 0;
-    font-size: 3.4rem;
+    font-size: 2.4rem;
     font-weight: 600;
     line-height: 80px;
     color: #C6C124;  /* 暗めの黄色 */
+    text-shadow: 1px 1px 2px whitesmoke; /* 縁の色とぼかしの設定 */
  }
 
 .scroll-to-top-btn {

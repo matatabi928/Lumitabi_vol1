@@ -27,9 +27,11 @@ h1 {
 
 .main-hero-highlight-content {
     margin-top: 165px;
+    color: #F9F9F9;
+    text-shadow: 1px 1px 2px grey; /* 縁の色とぼかしの設定 */
 }
 .main-hero-highlight-links {
-    margin-top: 30px;
+    margin-top: 80px;
     margin-left: 50px;
 }
 /*--- About styling ---*/
@@ -74,6 +76,10 @@ h1 {
     padding: 0px 25px;
 }
 /*--- Point styling ---*/
+.main-blog {
+    padding-bottom: 20px;
+}
+
 .main-point-item-content {
 display: flex;
 align-items: center;
@@ -103,6 +109,7 @@ align-items: center;
     width: 50%;
     align-items: center;
     padding: 0px 25px;
+    
 }
 
 .main-blog-item-link {

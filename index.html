@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
     <title>Lumitabi</title>
 
     <!-- Normarize.css-->
@@ -37,7 +37,7 @@
 
     <main class="main">
         <section class="main-hero">
-            <div id="halo">
+            <div class="main-img">
             <div class="main-hero-highlight">
                 <h1>ビジネスを成功へ導く<br>光り輝くデザインの世界へ</h1>
                     <div class="main-hero-highlight-content">
@@ -252,7 +252,21 @@
             </div>
         </div>
     </footer>
+    
+    <script>
+ window.addEventListener('scroll', function() {
+    let header = document.querySelector('.header');
+    let coverImage = document.querySelector('.main-img'); // セレクタを修正
+    let coverImageHeight = coverImage.offsetHeight;
 
+    if (window.pageYOffset > coverImageHeight) {
+      header.classList.add('colorized');
+    } else {
+      header.classList.remove('colorized');
+    }
+  });
+    </script>
+<!--
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
     <script>
@@ -271,7 +285,7 @@ VANTA.WAVES({
   waveSpeed: 0.75,
   zoom: 0.65
 })
-</script>
+</script>-->
 
 </body>
 </html>
