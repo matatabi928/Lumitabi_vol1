@@ -21,9 +21,8 @@
 <body>
     <header class="header">
         <div class="header-logo">
-        <img class="header-logo-img" src="images/logo_yoko_.png" alt="logo">
-        <!--<span class="header-logo-title">Lumitabi</span> -->
-        </div>
+            <img id="logo-img" class="header-logo-img" src="images/04_Wiggly logo yoko_no word_white.png" alt="logo">
+          </div>
         <nav class="header-nav">
             <ul class="header-nav-menu">
                 <li class="header-nav-menu-item"><a href="">ホーム</a></li>
@@ -212,10 +211,12 @@
                 <p>光のハーモニーが輝く<br>
                 Lumitabiならではのデザイン</p>
             </div>
-            <button class="scroll-to-top-btn" onclick="scrollToTop()">
-                <span class="arrow-up"></span>
-                ページのトップへ
-              </button>
+            <div class="scroll-to-top-btn-contenar">
+                <button class="scroll-to-top-btn" onclick="scrollToTop()">
+                    <span class="arrow-up"></span>
+                        TOP
+                </button>
+            </div>
 
             <script>
                 function scrollToTop() {
@@ -233,11 +234,11 @@
             <img class="footer-nav-img" src="images/logo_yoko_.png" alt="logo">
             <nav class="footer-nav-menu">
                 <ul>
-                    <li><a href="">ホーム</a></li>
-                    <li><a href="">サービス紹介</a></li>
-                    <li><a href="">プロフィール</a></li>
-                    <li><a href="">ブログ</a></li>
-                    <li><a href="">お問い合わせ</a></li>
+                    <li class="footer-nav-menu-item"><a href="">ホーム</a></li>
+                    <li class="footer-nav-menu-item"><a href="">サービス紹介</a></li>
+                    <li class="footer-nav-menu-item"><a href="">プロフィール</a></li>
+                    <li class="footer-nav-menu-item"><a href="">ブログ</a></li>
+                    <li class="footer-nav-menu-item"><a href="">お問い合わせ</a></li>
                 </ul>
             </nav>
             <div class="footer-security">
@@ -258,9 +259,11 @@ window.addEventListener('scroll', function() {
   let header = document.querySelector('.header');
   let coverImage = document.querySelector('.main-img');
   let coverImageHeight = coverImage.offsetHeight;
+  let logoImg = document.getElementById('logo-img');
 
   if (window.pageYOffset > coverImageHeight) {
     header.classList.add('colorized');
+    logoImg.classList.add('colorized');
     // ナビメニューの色を変更するコードを追加
     let navItems = document.querySelectorAll('.header-nav-menu-item a');
     navItems.forEach(function(item) {
@@ -268,6 +271,7 @@ window.addEventListener('scroll', function() {
     });
   } else {
     header.classList.remove('colorized');
+    logoImg.classList.remove('colorized');
     // ナビメニューの色を元に戻すコードを追加
     let navItems = document.querySelectorAll('.header-nav-menu-item a');
     navItems.forEach(function(item) {
