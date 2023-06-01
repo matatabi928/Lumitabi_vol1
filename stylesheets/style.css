@@ -127,10 +127,14 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-  .header.colorized {
+  .colorized {
     background-color: white; /* 色付きの背景色 */
-    color: black; /* 色付きのテキスト色 */
-    
+  }
+
+  .colorized .header-nav-menu-item a {
+    /* スクロール位置に応じた色へ変更 */
+    color: black; /* 赤色に変更 */
+    text-shadow: 1px 1px 2px white; /* 縁の色とぼかしの設定 */
 
   }
 

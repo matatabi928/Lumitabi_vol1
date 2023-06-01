@@ -254,17 +254,27 @@
     </footer>
     
     <script>
- window.addEventListener('scroll', function() {
-    let header = document.querySelector('.header');
-    let coverImage = document.querySelector('.main-img'); // セレクタを修正
-    let coverImageHeight = coverImage.offsetHeight;
+window.addEventListener('scroll', function() {
+  let header = document.querySelector('.header');
+  let coverImage = document.querySelector('.main-img');
+  let coverImageHeight = coverImage.offsetHeight;
 
-    if (window.pageYOffset > coverImageHeight) {
-      header.classList.add('colorized');
-    } else {
-      header.classList.remove('colorized');
-    }
-  });
+  if (window.pageYOffset > coverImageHeight) {
+    header.classList.add('colorized');
+    // ナビメニューの色を変更するコードを追加
+    let navItems = document.querySelectorAll('.header-nav-menu-item a');
+    navItems.forEach(function(item) {
+      item.classList.add('colorized');
+    });
+  } else {
+    header.classList.remove('colorized');
+    // ナビメニューの色を元に戻すコードを追加
+    let navItems = document.querySelectorAll('.header-nav-menu-item a');
+    navItems.forEach(function(item) {
+      item.classList.remove('colorized');
+    });
+  }
+});
     </script>
 <!--
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
