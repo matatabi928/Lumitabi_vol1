@@ -146,7 +146,7 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
 
   
   .header-logo-img.colorized {
-    content: url('/Users/seohikari/Desktop/Wordpress/wiggly.jp/Logo/Wiggly_Logo/PNG/03_Wiggly logo yoko_.png'); /* 新しいロゴ画像のパスを指定 */
+    content: url('../images/Wiggly_yoko.png'); /* 新しいロゴ画像のパスを指定 */
   }
 
   .header-logo {
