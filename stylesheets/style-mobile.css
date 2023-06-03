@@ -28,7 +28,14 @@ h5 {
 
 /*--- Header styling ---*/
 
-
+.main-img{
+    background-image: url('../images/dreamy-universal-light2.jpg');  /* 画像のURLを指定     */
+    background-position:left top;                     /* 画像の表示位置を指定 */
+    background-size:cover;                                 /* 画像のサイズを指定  */
+    width:100%;                                            /* 横幅のサイズを指定  */
+    height:765px;                                          /* 縦幅のサイズを指定  */
+    padding-top: 53px; 
+}
 
 
 /*--- About styling ---*/
@@ -93,6 +100,15 @@ h5 {
   }
 
   /*--- bot styling ---*/
+  .main-bot{
+    background-image: url('../images/trees.jpg');  /* 画像のURLを指定     */
+    background-position:top;                     /* 画像の表示位置を指定 */
+    background-size:cover;                                 /* 画像のサイズを指定  */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* 画像を固定する */
+    width:100%;                                            /* 横幅のサイズを指定  */
+  }
+
   .main-bot-item p {
     padding-top:50px ;
     padding-left: 10px;
