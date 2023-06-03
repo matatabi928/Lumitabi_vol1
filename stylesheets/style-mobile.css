@@ -2,6 +2,7 @@
 
 h1 {
     font-size: 2rem;
+    padding-left: 10px;
 }
 
 h2 {
@@ -35,6 +36,17 @@ h5 {
     width:100%;                                            /* 横幅のサイズを指定  */
     height:765px;                                          /* 縦幅のサイズを指定  */
     padding-top: 53px; 
+}
+
+.main-hero-highlight-content {
+    margin-top: 365px;
+    padding-left: 30px;
+}
+.main-hero-highlight-links {
+    display: flex;
+    justify-content: right;
+    margin-top: 30px;
+    padding: 10px;
 }
 
 
