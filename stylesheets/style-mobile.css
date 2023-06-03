@@ -1,7 +1,7 @@
 @media screen and (max-width: 48em) {
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.9rem;
     padding-left: 10px;
 }
 
@@ -39,7 +39,7 @@ h5 {
 }
 
 .main-hero-highlight-content {
-    margin-top: 365px;
+    margin-top: 355px;
     padding-left: 30px;
 }
 .main-hero-highlight-links {
