@@ -27,8 +27,6 @@ h1 {
 
 .main-hero-highlight-content {
     margin-top: 165px;
-    color: #F9F9F9;
-    text-shadow: 1px 1px 2px grey; /* 縁の色とぼかしの設定 */
 }
 .main-hero-highlight-links {
     margin-top: 80px;
@@ -48,10 +46,6 @@ h1 {
 .main-about-item-img,
 .main-about-item-img-content {
     width: 50%;
-}
-
-.main-about-item-img {
-    text-align: center;
 }
 
 .main-about-item-img-content >p {
@@ -76,13 +70,9 @@ h1 {
     padding: 0px 25px;
 }
 /*--- Point styling ---*/
-.main-blog {
-    padding-bottom: 20px;
-}
-
 .main-point-item-content {
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .main-point-item-img {
@@ -99,7 +89,6 @@ align-items: center;
     margin-left: 330px;
 }
 /*--- blog styling ---*/
-
 .main-blog-items {
     display: flex;
     align-items: center;
@@ -112,12 +101,7 @@ align-items: center;
     
 }
 
-.main-blog-item-link {
-    text-align: center;
-    padding: 50px;
- }
-
-/*--- blog styling ---*/
+/*--- bot styling ---*/
 
 .main-bot {
     display: flex;
@@ -178,15 +162,5 @@ align-items: center;
     margin-left: auto;
     color: #F9F9F9;
 }
-.footer-nav-menu-item a{
-    color: #F9F9F9;
-}
 
-.footer-security-item a{
-    color: #F9F9F9;
-}
-
-.footer-copy a{
-    color: #F9F9F9;
-}
 }

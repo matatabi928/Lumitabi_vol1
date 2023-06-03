@@ -133,10 +133,16 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
 
   .colorized .header-nav-menu-item a {
     /* スクロール位置に応じた色へ変更 */
-    color: black; /* 赤色に変更 */
-    text-shadow: 1px 1px 2px white; /* 縁の色とぼかしの設定 */
+    color: #242424; /* 赤色に変更 */
+    text-shadow: 1px 1px 1px white; /* 縁の色とぼかしの設定 */
 
   }
+
+  .colorized .header-nav-menu-item > a:hover ,
+  .colorized .header-nav-menu-item > a:focus {
+    color: #c9cd57;
+  }
+
 
   
   .header-logo-img.colorized {
@@ -169,12 +175,6 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
 
 /*--- Main hero ---*/
 
-/*#halo {
-    height: 700px;
-    padding-top: 53px; 
-}*/
-
-
  .main-hero {
     background-color: gainsboro;
     padding-bottom: 20px;
@@ -188,6 +188,11 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
     width:100%;                                            /* 横幅のサイズを指定  */
     height:765px;                                          /* 縦幅のサイズを指定  */
     padding-top: 53px; 
+}
+
+.main-hero-highlight-content {
+  color: #F9F9F9;
+  text-shadow: 1px 1px 2px grey; /* 縁の色とぼかしの設定 */
 }
 
  .main-hero-highlight-links a{
@@ -211,6 +216,10 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
  color: #C6C124;  /* 暗めの黄色 */
  }
 
+ .main-about-item-img {
+  text-align: center;
+}
+
  .main-about-item-img img {
     max-width: 80%;
     height: auto;
@@ -221,11 +230,7 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
 .main-pickup {
     background: linear-gradient(to left, rgba(253, 138, 228, 0.822), rgb(253, 253, 141));
     color: black;
- }
-
- .button-container {
-    text-align: center;
-    padding-top: 22px;
+    padding-bottom: 50px;
  }
 
  .button-detail-1 {
@@ -237,20 +242,27 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
     padding: 10px 20px;
  }
 
- .main-pickup-item {
-    margin: 100px 0px;
- }
+ .main-pickup-item-1 {
+  margin-top: 100px; /* 余白のサイズを適宜調整 */
+}
 
  .main-pickup-item-1 img {
     width: 100%;
     height: auto;
     border-radius: 4px;
+
   }
+
+  .button-container {
+    text-align: center;
+    padding: 20px;
+ }
 /*--- Main point ---*/
 .main-point {
     background-color: #FFFFFF;
     color: black;
     background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.3), rgba(255, 255, 0, 0.1));
+    padding-bottom: 30px;
  }
 
 .button-contact {
@@ -284,6 +296,7 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
 .main-blog {
     background: linear-gradient(to left, #F3F68D, #91B7EA);
     color: black;
+    padding-bottom: 50px;
  }
  .button-detail-2 {
     background: linear-gradient(to left, #F3F68D, #91B7EA);
@@ -298,9 +311,8 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
     text-align: center;
  }
 
- .main-blog-item {
-    margin-top: 100px ;
-    padding-bottom: 50px;
+ .main-blog-item-1 {
+  margin-top: 100px; /* 余白のサイズを適宜調整 */
  }
 
  .main-blog-item-1 img {
@@ -309,12 +321,6 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
     border-radius: 4px;
   }
 /*--- Main bot ---*/
-.main-bot {
-    background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.3), rgba(255, 255, 0, 0.1));
-    background-color: #FFFFFF;
-    color: black;
- }
-
  .main-bot{
   background-image: url('../images/trees-picture-image.jpg');  /* 画像のURLを指定     */
   background-position:top;                     /* 画像の表示位置を指定 */
@@ -329,7 +335,7 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
     font-size: 2.4rem;
     font-weight: 600;
     line-height: 80px;
-    color: #C6C124;  /* 暗めの黄色 */
+    color: #c9cd57;  /* 暗めの黄色 */
     text-shadow: 1px 1px 2px black; /* 縁の色とぼかしの設定 */
  }
 
@@ -388,3 +394,15 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
 
 .footer-security {
     display: flex;}
+
+.footer-nav-menu-item a{
+    color: #F9F9F9;
+}
+
+.footer-security-item a{
+    color: #F9F9F9;
+}
+
+.footer-copy a{
+    color: #F9F9F9;
+}

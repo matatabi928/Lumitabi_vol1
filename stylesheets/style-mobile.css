@@ -1,0 +1,140 @@
+@media screen and (max-width: 48em) {
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    padding: 20px;
+    margin: 0px;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+.h2-title-polygon {
+    text-align: center;
+    padding: 2px 0px;
+    background-color: #FFF9BD;  /* 薄い黄色 */
+    margin: auto;  /* 上マージンを負の値にしてセクション1の底と接触させる */
+    clip-path: polygon(0 0, 100% 0, 75% 100%, 25% 100%);  /* 上底の方が下底より大きい台形 */
+    width: 60%;  /* 横幅を画面の三分の一に変更 */
+    }
+
+/*--- Header styling ---*/
+
+
+
+
+/*--- About styling ---*/
+.main-about {
+    padding-bottom: 30px;
+}
+.main-about-item-img-content > p {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    font-weight: 600;
+    } 
+
+/*--- Pickup styling ---*/
+.main-pickup-item-1 {
+    margin-top: 50px; /* 余白のサイズを適宜調整 */
+  }
+
+/*--- point styling ---*/
+.main-point-item-text >h4 {
+    font-size: 1.3rem;
+    padding: 15px 0px;
+    position: relative;
+}
+
+.main-point-item-text > h4::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -1px;
+  width: 95%;
+  height: 2px;
+  background-color: #FFE13F;
+}
+
+.main-point-item-text-list ul {
+    font-size: 1.0rem;
+}
+
+.button-point-container {
+    display: flex;
+    justify-content: right;
+    padding: 20px;
+}
+/*--- blog styling ---*/
+
+.main-blog-item-text p {
+    font-size: 0.9rem
+}
+
+.main-blog-item-content p {
+    font-size: 0.9rem;
+
+}
+
+.main-blog-item-1 {
+    margin-top: 50px; /* 余白のサイズを適宜調整 */
+  }
+
+  /*--- bot styling ---*/
+  .main-bot-item p {
+    padding-top:50px ;
+    padding-left: 10px;
+    font-size: 2.0rem
+  }
+
+  .scroll-to-top-btn-contenar{
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+  /*--- bot styling ---*/
+.footer {
+    padding: 50px 20px 10px 20px;
+}
+
+.footer-nav-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.footer-nav-img {
+    padding-bottom: 30px;
+}
+  
+.footer-nav-menu-item {
+    flex-basis: 50%;
+    padding-top: 20px;
+    box-sizing: border-box;
+  }
+
+.footer-security {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+.footer-security-item {
+    padding-top: 30px;
+    flex-basis: calc(50% - 10px);
+    text-align: center;
+  }
+  
+.footer-copy {
+    padding-top : 30px;
+    text-align: center;
+    width: 100%;
+  }
+
+  }
