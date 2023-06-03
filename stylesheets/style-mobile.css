@@ -5,7 +5,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
 }
 
 h5 {
@@ -36,10 +36,14 @@ h5 {
     padding-bottom: 30px;
 }
 .main-about-item-img-content > p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 2.2rem;
     font-weight: 600;
     } 
+
+    .main-about-item-img-content-text > p {
+        font-size: 0.9rem;
+        } 
 
 /*--- Pickup styling ---*/
 .main-pickup-item-1 {
@@ -65,7 +69,7 @@ h5 {
 }
 
 .main-point-item-text-list ul {
-    font-size: 1.0rem;
+    font-size: 0.9rem;
 }
 
 .button-point-container {
@@ -92,7 +96,7 @@ h5 {
   .main-bot-item p {
     padding-top:50px ;
     padding-left: 10px;
-    font-size: 2.0rem
+    font-size: 1.7rem
   }
 
   .scroll-to-top-btn-contenar{
