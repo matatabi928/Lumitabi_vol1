@@ -1,8 +1,11 @@
+
 @media screen and (max-width: 48em) {
 
 h1 {
     font-size: 1.9rem;
     padding-left: 10px;
+    padding-top: 30px;
+    line-height: 50px;
 }
 
 h2 {
