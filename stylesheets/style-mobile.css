@@ -231,10 +231,9 @@ h5 {
   /*--- bot styling ---*/
   .main-bot{
     background-image: url('../images/trees.jpg');  /* 画像のURLを指定     */
-    background-position:top;                     /* 画像の表示位置を指定 */
+    background-position:bottom;                     /* 画像の表示位置を指定 */
     background-size:cover;                                 /* 画像のサイズを指定  */
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* 画像を固定する */
+    background-attachment: scroll; /* 画像を固定する */
     width:100%;                                            /* 横幅のサイズを指定  */
   }
 
@@ -266,10 +265,24 @@ h5 {
     flex-wrap: wrap;
   }
 
-.footer-nav-img {
-    padding-bottom: 30px;
+
+.footer-nav {
+    text-align: center;
 }
-  
+
+.footer-nav-img {
+    display: block;
+    margin: auto;
+    padding-bottom: 30px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.footer-nav {
+    text-align: center;
+}
+
+
 .footer-nav-menu-item {
     flex-basis: 50%;
     padding-top: 20px;

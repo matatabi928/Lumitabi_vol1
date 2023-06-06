@@ -155,6 +155,10 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
     max-width: 300px;
   }
 
+  .header-logo img {
+    max-height: 48px;
+    padding-left: 20px;
+  }
   .header-nav-menu {
     display: flex;
     list-style: none;
@@ -385,6 +389,11 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
 
 .footer {
     background-color: slategrey
+}
+
+.footer-nav-img {
+  max-width: 200px;
+  height: 100px;
 }
 
 .footer-nav-menu ul{
