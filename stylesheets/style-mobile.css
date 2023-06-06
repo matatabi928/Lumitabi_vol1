@@ -42,7 +42,7 @@ h5 {
 }
 
 .main-hero-highlight-content {
-    margin-top: 355px;
+    margin-top: 385px;
     padding-left: 30px;
 }
 .main-hero-highlight-links {
@@ -52,6 +52,120 @@ h5 {
     padding: 10px;
 }
 
+/* モバイル表示時にメニューが右からスライドして表示されるように設定 */
+.header-nav {
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    top: 0;
+    background: rgba(255, 255, 255, 0.9); /* 白色の背景に少し透明度を設定 */
+    width: 80%; /* 全画面に広げる */
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+    display: flex; /* 追加：フレックスボックスに設定 */
+    justify-content: center; /* 追加：メニューを中央に寄せる */
+    align-items: center; /* 追加：メニューを中央に寄せる */
+    border-radius: 20px; /* 全ての角を10pxで丸く */
+}
+
+  .header-nav-menu {
+    list-style: none;
+    text-align: center; /* 追加：テキストを中央に寄せる */
+    width: 100%; /* 追加：全画面に広げる */
+    display: flex; /* 追加：フレックスボックスに設定 */
+    flex-direction: column; /* 追加：メニューアイテムを縦に並べる */
+    justify-content: center; /* 追加：メニューを中央に寄せる */
+    align-items: center; /* 追加：メニューを中央に寄せる */
+  }
+
+  .header-nav-menu-item {
+    margin-bottom: 20px; /* 追加：メニュー項目間にスペースを追加 */
+    display: block;
+    margin-right: 15px;
+  }
+
+  .header-nav-menu-item a {
+    color: #242424; /* 文字の色を黒に変更 */
+    font-weight: 600;
+    text-shadow: none;
+
+}
+
+.header-nav-menu-item > a:hover ,
+.header-nav-menu-item > a:focus {
+  color: #c9cd57;
+}
+  .burger-menu, .close-menu {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%); /* 追加：上下中央に配置 */
+    z-index: 2;  /* 追加 */
+  }
+
+  .burger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color:#fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .close-menu {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+
+.close-menu div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #242424;
+    width: 2px;
+    height: 100%;
+  }
+
+  .close-menu div:first-child {
+    transform: rotate(45deg);
+  }
+  
+  .close-menu div:last-child {
+    transform: rotate(-45deg);
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  .toggle .burger-menu div:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .burger-menu div:nth-child(2) {
+    opacity: 0;
+  }
+
+  .toggle .burger-menu div:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+@media (min-width: 769px) {
+  .burger-menu, .close-menu {
+    display: none;
+  }
+}
 
 /*--- About styling ---*/
 .main-about {
@@ -135,6 +249,14 @@ h5 {
     display: flex;
     justify-content: center;
 }
+
+.main-bot{
+    background-image: url('../images/trees.jpg');  /* 画像のURLを指定     */
+    background-position:top;                     /* 画像の表示位置を指定 */
+    background-size:cover;                                 /* 画像のサイズを指定  */
+    background-repeat: no-repeat;
+    width:100%;                                            /* 横幅のサイズを指定  */
+  }
   /*--- bot styling ---*/
 .footer {
     padding: 50px 20px 10px 20px;
@@ -171,5 +293,4 @@ h5 {
     text-align: center;
     width: 100%;
   }
-
-  }
+}
