@@ -306,3 +306,208 @@ h5 {
     width: 100%;
   }
 }
+
+@media screen and (orientation: landscape) and (min-width: 601px) {
+  /* ここに、デバイスが横向きで、ビューポートの幅が601px以上のときに適用するスタイルを書く */
+  
+  h1 {
+    margin-top: 50px;
+    font-size: 2.2rem;
+    line-height: 60px;
+}
+
+.h2-title-polygon {
+    width: 50%;
+    }
+
+.container {
+padding: 0 50px;
+}
+
+
+/*--- Header styling ---*/
+.header-logo-img {
+margin-left: 10px;
+}
+
+.header-nav-menu {
+margin-right: 20px;
+}
+
+.header-nav-menu-item {
+margin-left: 25px;
+}
+
+/*--- Hero styling ---*/
+
+.main-hero {
+background-color: gainsboro;
+padding-bottom: 20px;
+height: 555px;
+}
+
+.main-img{
+height: 555px;
+}
+
+.main-hero-highlight {
+margin-left: 50px;
+}
+
+.main-hero-highlight-content {
+margin-top: 130px;
+}
+.main-hero-highlight-links {
+margin-top: 40px;
+margin-left: 50px;
+}
+/*--- About styling ---*/
+.main-about-item {
+padding-top: -20px;
+padding-bottom: 70px;
+}
+
+.main-about-item-img {
+display: none;
+}
+
+.main-about-item-img-content >p {
+font-size: 1.6rem;
+font-weight: 600;
+line-height: 50px;
+text-align: center;
+}
+
+/*--- Pickup styling ---*/
+
+.main-pickup-items {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+
+}
+
+.main-pickup-item {
+width: 50%;
+align-items: center;
+padding: 0px 25px;
+}
+
+.main-pickup-item-1 {
+margin-top: 50px; /* 余白のサイズを適宜調整 */
+}
+/*--- Point styling ---*/
+
+.main-point-item-img {
+display: none;
+text-align: center;
+}
+
+.button-contact{
+padding-top: 10px;
+}
+
+.list-button-container {
+display: flex;
+justify-content: space-between;
+}
+
+.main-point-item-text-list,
+.button-point-container {
+box-sizing: border-box; /* パディングとボーダーが要素の内部に含まれるように設定 */
+}
+
+.main-point-item-text-list {
+flex: 0 0 70%;
+}
+
+.button-point-container {
+flex: 0 0 30%;
+display: flex; /* 追加 */
+align-items: center; /* 追加 */
+justify-content: center; /* 追加 */
+}
+
+
+/*--- blog styling ---*/
+
+.main-blog-items {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.main-blog-item {
+flex-basis: 50%;
+align-items: center;
+padding: 0px 25px;
+
+}
+
+.main-blog-item-1 {
+margin-top: 50px;
+}
+
+/*--- bot styling ---*/
+
+.main-bot {
+display: flex;
+justify-content: left;
+align-items: center;
+}
+
+.main-bot-item >p {
+padding-top: 50px;
+margin-left: 50px;
+font-size: 2.1rem;
+}
+
+.scroll-to-top-btn-contenar{
+padding-left: 60px;
+}
+
+/*--- footer styling ---*/
+.footer {
+padding: 10px 0px;
+}
+
+.footer-nav-img {
+padding-top: 10px;
+padding-left: 30px;
+max-width: 300px;
+padding-bottom: 15px;
+border-bottom: 2px solid white;
+}
+
+.footer-nav-img::after {
+content: "";
+position: absolute;
+bottom: -2px;
+left: 0;
+width: 100%;
+height: 2px;
+background-color: white;
+}
+.footer-nav-menu {
+margin-left: 0px;
+padding-top: 30px;
+}
+
+.footer-nav-menu-item {
+margin-left: 30px;
+text-align: center;
+}
+
+
+.footer-security-item {
+margin-left: 70px;
+padding-top: 30px;
+}
+
+.footer-copy {
+padding-top: 30px;
+padding-right: 20px;
+margin-left: auto;
+color: #F9F9F9;
+}
+}
