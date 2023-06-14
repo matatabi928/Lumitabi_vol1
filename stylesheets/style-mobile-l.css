@@ -1,0 +1,298 @@
+/* スマートフォン（横向き） */
+@media screen and (max-width: 48em) and (orientation: landscape) {
+    h1 {
+        margin-top: 50px;
+        font-size: 2.2rem;
+        line-height: 60px;
+    }
+
+    .h2-title-polygon {
+        width: 50%;
+        }
+
+    .container {
+    padding: 0 50px;
+}
+
+
+/*--- Header styling ---*/
+/* モバイル表示時にメニューが右からスライドして表示されるように設定 */
+.header-nav {
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    top: 0;
+    background: rgba(255, 255, 255, 0.9); /* 白色の背景に少し透明度を設定 */
+    width: 80%; /* 全画面に広げる */
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+    display: flex; /* 追加：フレックスボックスに設定 */
+    justify-content: center; /* 追加：メニューを中央に寄せる */
+    align-items: center; /* 追加：メニューを中央に寄せる */
+    border-radius: 20px; /* 全ての角を10pxで丸く */
+}
+
+  .header-nav-menu {
+    list-style: none;
+    text-align: center; /* 追加：テキストを中央に寄せる */
+    width: 100%; /* 追加：全画面に広げる */
+    display: flex; /* 追加：フレックスボックスに設定 */
+    flex-direction: column; /* 追加：メニューアイテムを縦に並べる */
+    justify-content: center; /* 追加：メニューを中央に寄せる */
+    align-items: center; /* 追加：メニューを中央に寄せる */
+  }
+
+  .header-nav-menu-item {
+    margin-bottom: 20px; /* 追加：メニュー項目間にスペースを追加 */
+    display: block;
+    margin-right: 15px;
+  }
+
+  .header-nav-menu-item a {
+    color: #242424; /* 文字の色を黒に変更 */
+    font-weight: 600;
+    text-shadow: none;
+
+}
+
+.header-nav-menu-item > a:hover ,
+.header-nav-menu-item > a:focus {
+  color: #c9cd57;
+}
+  .burger-menu, .close-menu {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%); /* 追加：上下中央に配置 */
+    z-index: 2;  /* 追加 */
+  }
+
+  .burger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color:#fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .close-menu {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+
+.close-menu div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #242424;
+    width: 2px;
+    height: 100%;
+  }
+
+  .close-menu div:first-child {
+    transform: rotate(45deg);
+  }
+  
+  .close-menu div:last-child {
+    transform: rotate(-45deg);
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  .toggle .burger-menu div:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .burger-menu div:nth-child(2) {
+    opacity: 0;
+  }
+
+  .toggle .burger-menu div:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+/*--- Hero styling ---*/
+
+.main-hero {
+    background-color: gainsboro;
+    padding-bottom: 20px;
+    height: 555px;
+ }
+
+.main-img{
+    height: 555px;
+}
+
+.main-hero-highlight {
+    margin-left: 50px;
+}
+
+.main-hero-highlight-content {
+    margin-top: 130px;
+}
+.main-hero-highlight-links {
+    margin-top: 40px;
+    margin-left: 50px;
+}
+/*--- About styling ---*/
+.main-about-item {
+    padding-top: -20px;
+    padding-bottom: 70px;
+}
+
+.main-about-item-img {
+    display: none;
+}
+
+.main-about-item-img-content >p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 50px;
+    text-align: center;
+}
+
+/*--- Pickup styling ---*/
+
+.main-pickup-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* カラム数は自動、最小200px、最大利用可能スペースすべてを使用 */
+    gap: 1rem; /* グリッドのギャップ（行と列の間隔）を設定 */
+}
+
+.main-pickup-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 上下端にコンテンツを配置 */
+    padding: 0px 10px;
+}
+
+.button-container {
+    align-self: flex-end; /* ボタンを下端に配置 */
+}
+
+
+.main-pickup-item-1 {
+    margin-top: 50px; /* 余白のサイズを適宜調整 */
+  }
+/*--- Point styling ---*/
+
+.main-point-item-img {
+    display: none;
+    text-align: center;
+}
+
+.button-contact{
+    padding-top: 10px;
+}
+
+.list-button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-point-item-text-list,
+.button-point-container {
+    box-sizing: border-box; /* パディングとボーダーが要素の内部に含まれるように設定 */
+}
+
+.main-point-item-text-list {
+    flex: 0 0 70%;
+}
+
+.button-point-container {
+    flex: 0 0 30%;
+    display: flex; /* 追加 */
+    align-items: center; /* 追加 */
+    justify-content: center; /* 追加 */
+}
+
+
+/*--- blog styling ---*/
+
+.main-blog-items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.main-blog-item {
+    flex-basis: 50%;
+    align-items: center;
+    padding: 0px 25px;
+    
+}
+
+.main-blog-item-1 {
+    margin-top: 50px;
+}
+
+.main-point-item-text-list ul {
+    font-size: 1rem;
+}
+
+/*--- bot styling ---*/
+
+.main-bot {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+ .main-bot-item >p {
+    padding-top: 50px;
+    margin-left: 50px;
+    font-size: 2.1rem;
+}
+
+.scroll-to-top-btn-contenar{
+    padding-left: 60px;
+}
+
+/*--- footer styling ---*/
+.footer {
+    padding: 10px 0px;
+}
+
+.footer-nav-img {
+    padding-top: 10px;
+    padding-left: 30px;
+    max-height: 75px;
+    padding-bottom: 15px;
+  }
+  
+.footer-nav-menu {
+    margin-left: 0px;
+    padding-top: 30px;
+}
+
+.footer-nav-menu-item {
+    margin-left: 30px;
+    text-align: center;
+}
+
+
+.footer-security-item {
+    margin-left: 70px;
+    padding-top: 30px;
+  }
+
+.footer-copy {
+    padding-top: 30px;
+    padding-right: 20px;
+    margin-left: auto;
+    color: #F9F9F9;
+}
+}
