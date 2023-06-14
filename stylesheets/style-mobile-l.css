@@ -171,12 +171,12 @@
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* カラム数は自動、最小200px、最大利用可能スペースすべてを使用 */
     gap: 1rem; /* グリッドのギャップ（行と列の間隔）を設定 */
     grid-template-columns: repeat(2, 1fr); /* スマホでは2カラムに変更 */
-    padding: 0px 10px;
 }
 
 .main-pickup-item {
     display: flex;
     flex-direction: column; /* フレックスの方向を縦に設定 */
+    padding: 0px 10px;
 }
 
 .main-pickup-item-text {
