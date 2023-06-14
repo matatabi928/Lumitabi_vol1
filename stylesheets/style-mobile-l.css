@@ -186,8 +186,6 @@
     justify-content: space-between;
 }
 
-}
-
 .button-container {
     align-self: flex-end; /* ボタンを下端に配置 */
 }
