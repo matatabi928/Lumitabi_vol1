@@ -58,6 +58,35 @@ a {
     text-decoration: none;
 }
 
+td{
+  line-height: 25px;
+}
+  /* パンくずリストのスタイル */
+
+.breadcrumbs ul {
+  list-style: none;
+  margin: 0;
+  padding: 5px 0px;
+  font-size: 0.9rem;
+}
+
+.breadcrumbs li {
+  display: inline;
+}
+
+.breadcrumbs li::after {
+  content: " > ";
+  margin: 0 5px;
+}
+
+.breadcrumbs li:last-child::after {
+  content: ""; /* 最後のアイテムの後には矢印を表示しない */
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  /* リンクのスタイル */
+}
 
 /*--- Reusable Classes ---*/
 .container {
@@ -369,28 +398,20 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
     background-color: #F4F47A;
   }
 
-/*--- footer ---*/
-/*-.footer {
-  position: relative;
-}
+  /*--- footer styling ---*/
 
-.footer::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(to right, #00BFFF, #FFF9BD);
-}*/
+
+  /*--- ホームページ・LP制作 styling ---*/
 
 .footer {
     background-color: slategrey
 }
 
 .footer-nav-img {
-  max-width: 200px;
-  height: 100px;
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+  height: 75px;
 }
 
 .footer-nav-menu ul{
@@ -412,3 +433,319 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
 .footer-copy a{
     color: #F9F9F9;
 }
+
+  /*--- ホームページ・プロフィール styling ---*/
+
+  /*--- default styling ---*/
+  h1.profile__h1  {
+    margin-top: 0;
+    color: #F9F9F9;
+    text-shadow: 1px 1px 2px #000000; /* 縁の色とぼかしの設定 */
+    font-size: 3.0rem;
+    font-weight: 600;
+    line-height: 80px;
+  }
+
+  h2.profile__h2 {
+    position: relative;
+    text-align: center;
+  }
+  
+  h2.profile__h2::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px; /* 線の長さを調整する値を指定してください */
+    height: 3px;
+    background-color: #F3F68D;
+  }
+
+  h3.profile__h3 {
+    padding-left: 70px;
+    font-size: 1.5rem;
+    position: relative;
+  }
+  
+  h3.profile__h3::before {
+    margin-left: 50px;
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -10px;
+    height: 200%; /* 線の高さを調整する値を指定してください */
+    width: 6px; /* 線の幅を調整する値を指定してください */
+    background-color: #F3F68D;
+  }
+  
+  h4.profile__h4 {
+    font-size: 1.05rem;
+    padding-left: 1.2em;/*アイコン分のスペース*/
+    position: relative;/*相対位置*/
+  }
+  
+  h4.profile__h4::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f1b0";/*アイコンのユニコード*/
+    font-weight: 900;
+    position: absolute;/*絶対位置*/
+    font-size: 1em;/*サイズ*/
+    left: 0;/*アイコンの位置*/
+    top: 0;/*アイコンの位置*/
+    color: #ff938b; /*アイコン色*/
+  }
+
+  h5.profile__h5 {
+    font-size: 1.2rem;
+    padding-top: 20px;
+  }
+
+  .profile-color{
+    background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.3), rgba(255, 255, 0, 0.1));
+  }
+
+  /*--- breadcrumbs styling ---*/
+  .breadcrumbs-li{
+    padding-top: 60px;
+  }
+
+  /* profile-cover */
+.profile-cover--img{
+  background-image: url('../images/Profile_cover.jpg');  /* 画像のURLを指定     */
+  background-position:left top;                     /* 画像の表示位置を指定 */
+  background-size:cover;                                 /* 画像のサイズを指定  */
+  width:100%;                                            /* 横幅のサイズを指定  */
+  height:380px;                                          /* 縦幅のサイズを指定  */
+}
+
+.main-hero-highlight-content {
+color: #F9F9F9;
+text-shadow: 1px 1px 2px grey; /* 縁の色とぼかしの設定 */
+}
+
+   /* profile-linkのスタイル */
+
+   .button-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+  }
+  
+  .button-wrapper a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 185px;
+    height: 55px;
+    padding: 10px 15px;
+    margin-right: 50px;
+    background-color: transparent;
+    border: 2px solid #F3F68D;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .button-wrapper a:hover {
+    background-color: #F3F68D;
+    color: black;
+  }
+
+   /* greetingのスタイル */
+
+   #greeting{
+    padding-top: 50px;
+   }
+  
+  .greeting-block__hightlight__text >p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: #C6C124;
+    padding-top: 25px;
+  }
+  
+  .greeting-block__text{
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  .greeting-block__text >p{
+    line-height: 20px;
+  }
+
+  /* business-overviewのスタイル */
+
+  #business-overview {
+    padding-top: 50px;
+  }
+
+  .overview-table-container {
+    padding-top: 30px;
+  }
+  
+  /* business-overviewの表スタイル */
+  
+  .overview-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    max-width: 50rem; /* 表の最大幅を指定 */
+    width: 100%; /* 表の幅を100%に設定 */
+  }
+  
+  .overview-table__cell {
+    padding: 10px;
+    border: 1px solid #C6CAA6;
+    width: 85%; /* 左のカラムの幅を指定 */
+  }
+  
+  .overview-table__cell--yellow {
+    background-color: #FFF0B4;
+    font-weight: bold;
+    text-align: center; /* 左のカラムの文字を真ん中に配置 */
+    width: 15%; /* 右のカラムの幅を指定 */
+  }
+
+  /* my-profileのスタイル */
+
+  #my-profile{
+    padding-top: 50px;
+  }
+
+  .my-profile__image img {
+
+    padding: 60px;
+
+  }
+
+  .my-profile__description >p{
+    line-height: 25px;
+    font-size: 0.9rem
+  }
+
+  /* my-policyのスタイル */
+
+  #my-policy{
+    padding-top: 50px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .my-policy__title {
+    grid-column: 1 / -1;
+  }
+  
+  .my-policy__content {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 20px;
+  }
+
+  .my-policy__content__tittle {
+    padding-left: 30px;
+ }
+  
+  .my-policy__column {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    gap: 10px;
+  }
+  
+  .my-policy__column img {
+    width: 100%;
+    height: 110px;
+
+  }
+  
+  .my-policy__column div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .my-policy__column h5, .my-policy__column p {
+    margin: 0;
+  }
+
+  .my-policy__description{
+    padding-top: 10px;
+  }
+
+  #my-policy{
+    padding-bottom: 100px;
+  }
+  
+
+  /*--- profile-foot-cover ---*/
+  .profile-foot-cover {
+    background-image: url('../images/profile-fot.jpg');
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+  }
+  
+  .profile-foot-cover-item {
+    margin-bottom: 20px;
+  }
+  
+  .profile-foot-cover-item > p {
+    font-size: 2.0rem;
+    font-weight: 600;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+  }
+  
+  .profile-foot-cover-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profile-foot-cover-btn{
+    font-size: 1.4rem;
+    background: transparent;
+    border: 2px solid;
+    border-image: linear-gradient(to left, #F3F68D, #91B7EA) 1;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-left: 320px;
+  }
+  
+  .profile-foot-cover-scroll-to-top-btn {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50%;
+    background-color: #F4F47A;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left:220px ;
+  }
+  
+  
+  
+  
