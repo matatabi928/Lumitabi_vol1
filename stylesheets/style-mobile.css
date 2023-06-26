@@ -306,4 +306,97 @@ h5 {
     text-align: center;
     width: 100%;
   }
+ /*--- default styling ---*/
+ h1.profile__h1  {
+  margin-top: 0;
+}
+
+h2.profile__h2 {
+  font-size: 1.5rem;
+}
+
+h3.profile__h3 {
+  padding-left: 10px;
+  font-size: 1.3rem;
+}
+
+
+h4.profile__h4 {
+  font-size: 1.05rem;
+}
+
+h5.profile__h5 {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+}
+
+/* profile-linkのスタイル */
+.profile-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 30px;
+}
+
+.button-wrapper a {
+  display: inline-flex;
+  width: 135px;
+  height: 35px;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  flex-basis: calc(50% - 20px); /* マージンの分だけ幅を減らします */
+  text-align: center;
+  margin: 10px;
+  box-sizing: border-box; /* ボックスのサイズ計算方法を変更 */
+}
+
+
+
+/* greetingのスタイル */
+.greeting-block__hightlight__text >p{
+  font-size: 1.45rem;
+}
+
+/* business-overviewのスタイル */
+
+/* business-overviewの表スタイル */
+
+/* my-profileのスタイル */
+
+.my-policy__content {
+  padding-top: 50px;
+}
+
+.my-policy__content__tittle {
+  padding-left: 0px;
+}
+
+.my-policy__column {
+  display: flex;
+  align-items:start; /* 縦方向の中央寄せ */
+  grid-template-columns: 0.5fr 0.5fr;
+  gap: 10px;  
+}
+
+.my-policy__column img {
+  width: 40px;
+  height: 40px;
+}
+
+.my-policy__description{
+  font-size: 0.9rem;
+}
+
+
 }

@@ -463,13 +463,12 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
   }
 
   h3.profile__h3 {
-    padding-left: 70px;
+    padding-left: 20px;
     font-size: 1.5rem;
     position: relative;
   }
   
   h3.profile__h3::before {
-    margin-left: 50px;
     content: "";
     position: absolute;
     top: 50%;
@@ -534,20 +533,10 @@ text-shadow: 1px 1px 2px grey; /* 縁の色とぼかしの設定 */
   }
   
   .button-wrapper a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 185px;
-    height: 55px;
-    padding: 10px 15px;
-    margin-right: 50px;
-    background-color: transparent;
     border: 2px solid #F3F68D;
     color: black;
     font-weight: 600;
-    text-decoration: none;
     text-align: center;
-    transition: background-color 0.3s, color 0.3s;
   }
   
   .button-wrapper a:hover {
@@ -564,13 +553,11 @@ text-shadow: 1px 1px 2px grey; /* 縁の色とぼかしの設定 */
   .greeting-block__hightlight__text >p{
     font-size: 1.5rem;
     font-weight: 600;
-    text-align: center;
     color: #C6C124;
     padding-top: 25px;
   }
   
   .greeting-block__text{
-    text-align: center;
     padding-top: 15px;
   }
 
@@ -616,11 +603,6 @@ text-shadow: 1px 1px 2px grey; /* 縁の色とぼかしの設定 */
     padding-top: 50px;
   }
 
-  .my-profile__image img {
-
-    padding: 60px;
-
-  }
 
   .my-profile__description >p{
     line-height: 25px;
@@ -662,8 +644,7 @@ text-shadow: 1px 1px 2px grey; /* 縁の色とぼかしの設定 */
   
   .my-policy__column img {
     width: 100%;
-    height: 110px;
-
+    height: 100%;
   }
   
   .my-policy__column div {

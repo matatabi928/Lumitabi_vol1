@@ -302,4 +302,18 @@
     margin-left: auto;
     color: #F9F9F9;
 }
+
+/* profile-linkのスタイル */
+
+/* greetingのスタイル */
+.greeting-block__hightlight__text >p{
+  font-size: 1.3rem;
+}
+
+/* business-overviewのスタイル */
+
+/* business-overviewの表スタイル */
+
+/* my-profileのスタイル */
+
 }

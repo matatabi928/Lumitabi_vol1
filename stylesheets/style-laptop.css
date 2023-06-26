@@ -153,9 +153,37 @@ h1 {
 }
 
     /* profile-linkのスタイル */
+    .button-wrapper {
+        display: flex;
+        justify-content: center;
+        padding: 50px 0px;
+      }
+      
+      .button-wrapper a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 185px;
+        height: 55px;
+        padding: 10px 15px;
+        margin-right: 50px;
+        background-color: transparent;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      
+
   
     /* greetingのスタイル */
 
+    .greeting-block__hightlight__text >p{
+        text-align:center;
+      }
+
+    .greeting-block__text{
+        text-align: center;
+        
+      }
     /* business-overviewのスタイル */
 
     /* business-overviewの表スタイル */
@@ -167,6 +195,11 @@ h1 {
   align-items: center;
   justify-content: space-between;
 }
+
+
+  .my-profile__image img {
+    padding: 60px;
+  }
 
 
 .my-profile__image {
