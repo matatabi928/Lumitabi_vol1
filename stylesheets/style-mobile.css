@@ -375,7 +375,7 @@ h5.profile__h5 {
 /* my-profileのスタイル */
 
 .my-policy__content {
-  padding-top: 50px;
+  padding-top: 25px;
 }
 
 .my-policy__content__tittle {
@@ -398,5 +398,63 @@ h5.profile__h5 {
   font-size: 0.9rem;
 }
 
+#my-policy{
+  padding-bottom: 50px;
+}
 
+  /*--- profile-foot-cover ---*/
+  .profile-foot-cover {
+    background-image: url('../images/profile-fot.jpg');
+    background-attachment: scroll;
+  }
+
+  .profile-foot-cover-item {
+    margin-bottom: 20px;
+  }
+  
+  .profile-foot-cover-item > p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+    padding-right: 70px;
+  }
+
+  .profile-foot-cover-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profile-foot-cover-btn{
+    font-size: 1.0rem;
+    background: transparent;
+    border: 2px solid;
+    border-image: linear-gradient(to left, #F3F68D, #91B7EA) 1;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+
+  .profile-foot-cover-scroll-to-top-btn {
+    height: 80px;
+    width: 80px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50%;
+    background-color: #F4F47A;
+    background: linear-gradient(to left, #F3F68D, #91B7EA);
+
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 60px;
+  }
+  
 }
