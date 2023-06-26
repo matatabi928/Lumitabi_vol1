@@ -371,16 +371,69 @@ h5.profile__h5 {
 
 
 /* greetingのスタイル */
+
+#greeting{
+  padding-top:0px;
+ }
+
+#greeting:before { 
+  content: "";
+  display: block;
+  height: 57px;     /* ヘッダーの高さに設定します */
+  margin-top:-57px;  /* 同じ値だけマイナス方向に設定します */
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .greeting-block__hightlight__text >p{
   font-size: 1.45rem;
 }
 
 /* business-overviewのスタイル */
+#business-overview{
+  padding-top:0px;
+  margin-top: 20px;
+ }
 
+#business-overview:before { 
+  content: "";
+  display: block;
+  height: 57px;     /* ヘッダーの高さに設定します */
+  margin-top:-57px;  /* 同じ値だけマイナス方向に設定します */
+  visibility: hidden;
+  pointer-events: none;
+}
 /* business-overviewの表スタイル */
 
 /* my-profileのスタイル */
+#my-profile{
+  padding-top:0px;
+  margin-top: 20px;
+ }
 
+#my-profile:before { 
+  content: "";
+  display: block;
+  height: 57px;     /* ヘッダーの高さに設定します */
+  margin-top:-57px;  /* 同じ値だけマイナス方向に設定します */
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* my-policyのスタイル */
+#my-policy{
+  padding-top:0px;
+  margin-top: 20px;
+ }
+
+#my-policy:before { 
+  content: "";
+  display: block;
+  height: 57px;     /* ヘッダーの高さに設定します */
+  margin-top:-57px;  /* 同じ値だけマイナス方向に設定します */
+  visibility: hidden;
+  pointer-events: none;
+}
 .my-policy__content {
   padding-top: 25px;
 }
