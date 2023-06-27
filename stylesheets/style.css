@@ -542,7 +542,7 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
   background-position:left top;                     /* 画像の表示位置を指定 */
   background-size:cover;                                 /* 画像のサイズを指定  */
   width:100%;                                            /* 横幅のサイズを指定  */
-  height:380px;                                          /* 縦幅のサイズを指定  */
+  height:200px;                                          /* 縦幅のサイズを指定  */
 }
 
 .main-hero-highlight-content {
@@ -552,6 +552,11 @@ text-shadow: 1px 1px 2px grey; /* 縁の色とぼかしの設定 */
 
    /* profile-linkのスタイル */
 
+   .profile-link {
+    background: linear-gradient(to left, rgba(253, 138, 228, 0.822), rgb(253, 253, 141));
+   }
+
+
    .button-wrapper {
     display: flex;
     justify-content: center;
@@ -559,8 +564,9 @@ text-shadow: 1px 1px 2px grey; /* 縁の色とぼかしの設定 */
   }
   
   .button-wrapper a {
-    border: 2px solid #F3F68D;
-    color: black;
+    border: 2px solid ;
+    border-image: linear-gradient(to left, rgba(253, 138, 228, 0.822), rgb(253, 253, 141))1;
+    color: #242424;
     font-weight: 600;
     text-align: center;
     padding: 12px 24px; /* パディング追加 */
@@ -570,10 +576,10 @@ text-shadow: 1px 1px 2px grey; /* 縁の色とぼかしの設定 */
   }
   
   .button-wrapper a:hover {
-    background-color: #F3F68D;
-    color: black;
+    background: linear-gradient(to left, rgba(253, 138, 228, 0.822), rgb(253, 253, 141));
+    color: #242424; /* 濃い青色 */
     transform: scale(1.05); /* ホバー時にボタンを少し大きくする */
-  }
+  }  
   
 
    /* greetingのスタイル */

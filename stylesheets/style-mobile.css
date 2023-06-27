@@ -324,6 +324,7 @@ h5 {
   padding-top: 80px;
 }
 
+ /*--- profile-cover styling ---*/
 .profile-cover--img{                                       /* 横幅のサイズを指定  */
   height:180px;                                          /* 縦幅のサイズを指定  */
 }
