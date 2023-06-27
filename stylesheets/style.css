@@ -34,9 +34,16 @@ h4 {
 }
 
 h5 {
-    color: #C6C124;  /* 暗めの黄色 */
-    font-size: 1.6rem;
+  color: #C6C124;  /* 暗めの黄色 */
+  font-size: 1.6rem;
+  padding: 10px; /* テキスト周りに余白を追加 */
+  background-color: #f6f6d7; /* 背景色を設定 */
+  box-shadow: 5px 5px #c7c7c7; /* ボックスシャドウ（3D効果）を追加 */
+  display: inline-block; /* ブロック要素をインライン要素のように扱う（余白や影を正しく表示するため） */
+  transform: skew(-5deg); /* 要素を斜めに傾ける */
 }
+
+
 
 ul {
     margin: 0;

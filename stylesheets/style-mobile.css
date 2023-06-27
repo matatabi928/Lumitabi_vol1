@@ -14,9 +14,12 @@ h2 {
 }
 
 h5 {
-    padding: 20px;
-    margin: 0px;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-bottom: 20px;
 }
+
+
 
 .container {
     padding: 0 20px;
@@ -244,11 +247,18 @@ h5 {
     font-size: 1.7rem
   }
 
+  .scroll-to-top-btn {
+    height: 80px;
+    width: 80px; /* 幅と高さを同じに設定して円形にする */
+  }
+
   .scroll-to-top-btn-contenar{
     padding-bottom: 50px;
     display: flex;
     justify-content: center;
 }
+
+
 
 .main-bot{
     background-image: url('../images/trees.jpg');  /* 画像のURLを指定     */
@@ -256,7 +266,7 @@ h5 {
     background-repeat: no-repeat;
     width:100%;                                            /* 横幅のサイズを指定  */
   }
-  /*--- bot styling ---*/
+  /*--- footer styling ---*/
 .footer {
     padding: 50px 20px 10px 20px;
 }
