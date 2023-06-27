@@ -477,18 +477,25 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
   h2.profile__h2 {
     position: relative;
     text-align: center;
-  }
-  
-  h2.profile__h2::after {
+    color: black; /* 文字色を#F3F68Dに変更 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2.profile__h2::before,
+h2.profile__h2::after {
     content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px; /* 線の長さを調整する値を指定してください */
+    position: relative;
+    display: inline-block;
     height: 3px;
-    background-color: #F3F68D;
-  }
+    width: 80px; /* 両サイドの線の長さを調整 */
+    background-color: #F3F68D; /* 両サイドの線の色を#F3F68Dに変更 */
+    border-radius: 2px; /* 両サイドの線の端を丸く */
+    margin: 0 15px; /* テキストとの間隔を調整 */
+}
+
+  
 
   h3.profile__h3 {
     padding-left: 20px;
