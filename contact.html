@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="stylesheets/style-mobile-l.css">
     <link rel="stylesheet" href="stylesheets/style-tablet.css">
     <link rel="stylesheet" href="stylesheets/style-laptop.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
 
 
     <!-- Favicon -->
@@ -58,6 +59,24 @@
                 </div> 
             </div>
         </section>
+        <section class="contact">
+            <div class="contact-cover--img">
+                <div class="profile-cover--img--highlight">
+                    <h1 class="profile__h1">CONTACT</h1>
+                </div>
+            </div>
+        </section>
+        <section class="contact-form">
+            <form action="/submit_contact" method="post">
+                <input type="text" id="name" name="name" placeholder="お名前" required>
+                <input type="email" id="email" name="email" placeholder="メールアドレス" required>
+                <textarea id="message" name="message" placeholder="お問い合わせ内容" required></textarea>
+                <input type="submit" value="送信">
+            </form>
+        </section>
+        
+
+
     </main>
     <footer class="footer">
         <div footer-nav>

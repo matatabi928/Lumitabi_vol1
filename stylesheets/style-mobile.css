@@ -324,11 +324,6 @@ h5 {
   padding-top: 80px;
 }
 
- /*--- profile-cover styling ---*/
-.profile-cover--img{                                       /* 横幅のサイズを指定  */
-  height:180px;                                          /* 縦幅のサイズを指定  */
-}
-
 h2.profile__h2 {
   font-size: 1.5rem;
 }
@@ -350,8 +345,11 @@ h5.profile__h5 {
   margin-top: 20px;
 }
 
-/* profile-linkのスタイル */
-.profile-link {
+ /*--- profile-cover styling ---*/
+
+
+ /* profile-linkのスタイル */
+ .profile-link {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
