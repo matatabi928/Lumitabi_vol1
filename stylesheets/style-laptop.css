@@ -183,12 +183,24 @@ h1 {
       
 
   
-    /* greetingのスタイル */
+    /* greetingのスタイル */      
+    
+      
+      .highlight-icon {
+        position: absolute; /* 追加 */
+        left: -30px; /* 追加 */
+        top: 50%; /* 追加 */
+        transform: translateY(-50%); /* 追加 */
+        font-size: 1.2rem; /* 追加 */
+        color: #F3F68D; /* 追加 */
+      }
+      
 
     .greeting-block__text{
         text-align: center;
-        
+        font-size: 1.1rem;
       }
+      
     /* business-overviewのスタイル */
 
     /* business-overviewの表スタイル */

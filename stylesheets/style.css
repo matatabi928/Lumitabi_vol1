@@ -525,7 +525,6 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
 
   h5.profile__h5 {
     font-size: 1.2rem;
-    padding-top: 20px;
   }
 
   .profile-color{
@@ -564,12 +563,18 @@ text-shadow: 1px 1px 2px grey; /* 縁の色とぼかしの設定 */
     color: black;
     font-weight: 600;
     text-align: center;
+    padding: 12px 24px; /* パディング追加 */
+    text-decoration: none; /* テキストの下線を消す */
+    transition: all 0.3s ease-in-out; /* トランジション追加 */
+    border-radius: 4px;
   }
   
   .button-wrapper a:hover {
     background-color: #F3F68D;
     color: black;
+    transform: scale(1.05); /* ホバー時にボタンを少し大きくする */
   }
+  
 
    /* greetingのスタイル */
 
