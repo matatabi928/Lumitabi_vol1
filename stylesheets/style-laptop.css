@@ -152,6 +152,15 @@ h1 {
     color: #F9F9F9;
 }
 
+    /* default stylingのスタイル */
+    h1.profile__h1  {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 2.5rem;
+        padding-top: 250px;
+        padding-right: 200px;
+      }
+
     /* profile-linkのスタイル */
     .button-wrapper {
         display: flex;

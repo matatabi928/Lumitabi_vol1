@@ -202,6 +202,29 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
     color: #F3F68D;
   }
 
+  /* .white-header クラスが body 要素に追加されているページでは、ヘッダーの背景色を白色に設定します。 */
+.white-header .header {
+  background-color: white;
+}
+
+/* .white-header クラスが body 要素に追加されているページでは、ナビゲーションメニューのリンクの文字色を灰色に設定します。 */
+.white-header .header-nav-menu-item a {
+  color: #242424;
+  /* テキストに白色の影を追加します。 */
+  text-shadow: 1px 1px 1px white;
+}
+
+/* .white-header クラスが body 要素に追加されているページでは、ロゴ画像を変更します。 */
+.white-header .header-logo-img {
+  content: url('../images/Wigglyyoko.png');
+}
+
+/* .white-header クラスが body 要素に追加されているページでは、ナビゲーションメニューのリンクがホバーされたときの文字色を変更します。 */
+.white-header .header-nav-menu-item > a:hover,
+.white-header .header-nav-menu-item > a:focus {
+  color: #c9cd57; /* この色はあなたの要件に合わせて変更できます。 */
+}
+
 
 /*--- Main hero ---*/
 
