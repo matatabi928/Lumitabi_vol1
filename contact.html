@@ -66,14 +66,69 @@
                 </div>
             </div>
         </section>
+        <div class="profile-color">
+        <section class="contact-block__tit">
+            <div class="container">
+                <div class="contact-block__txt">
+                    <p>ご意見・ご質問をお受けしております。</p>
+                </div>
+            </div>
+        </section>
         <section class="contact-form">
             <form action="/submit_contact" method="post">
-                <input type="text" id="name" name="name" placeholder="お名前" required>
-                <input type="email" id="email" name="email" placeholder="メールアドレス" required>
-                <textarea id="message" name="message" placeholder="お問い合わせ内容" required></textarea>
-                <input type="submit" value="送信">
+                <h3 class="contact__h3">
+                    <span class="required-label">必須</span>お問い合わせ種目
+                </h3>
+                <div class="checkbox-container">
+                    <label class="checkbox-label">
+                      <input type="checkbox" name="service" value="web"> Webサイト制作・運用・保守
+                    </label>
+                    <label class="checkbox-label">
+                      <input type="checkbox" name="service" value="lp"> LP制作
+                    </label>
+                    <label class="checkbox-label">
+                      <input type="checkbox" name="service" value="marketing"> マーケティング戦略・SEO対策
+                    </label>
+                    <label class="checkbox-label">
+                      <input type="checkbox" name="service" value="music"> 作曲・編曲（楽曲提供）
+                     </label>
+                    <label class="checkbox-label">
+                      <input type="checkbox" name="service" value="video"> 動画編集
+                    </label>
+                    <label class="checkbox-label">
+                      <input type="checkbox" name="service" value="business"> ビジネスマナー研修
+                    </label>
+                </div>
+                <div class="form-container">
+                    <h3 class="contact__h3"><span class="required-label">必須</span>会社名・団体名</h3>  
+                    <input type="text" id="company" name="company" placeholder="株式会社〇〇〇〇" required>
+                    <h3 class="contact__h3"><span class="required-label">必須</span>お名前</h3>             
+                    <input type="text" id="name" name="name" placeholder="妹尾  光" required>
+                    <h3 class="contact__h3"><span class="required-label">必須</span>メールアドレス</h3>   
+                    <input type="email" id="email" name="email" placeholder="h.seno@lumitabi.com" required>
+                    <h3 class="contact__h3"><span class="any-label">任意</span>電話番号</h3>   
+                    <input type="email" id="email" name="email" placeholder="03-1234-5678">
+                    <h3 class="contact__h3"><span class="required-label">必須</span>件名</h3>
+                    <input type="text" id="title" name="title" placeholder="Web制作についてのご相談" required>
+                    <h3 class="contact__h3"><span class="required-label">必須</span>お問い合わせ内容</h3>
+                    <textarea id="massage" name="massage" placeholder="お問い合わせ内容" required></textarea>
+                </div>
+                <h3 class="contact__h3"><span class="required-label">必須</span>プライパシーポリシーに関する同意</h3>
+                <div class="checkbox-container">
+                   <div class="privacy-policy-agreement">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">プライバシーポリシーに同意する（<a href="/privacy">詳細</a>）</label>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <input type="submit" value="送信">
+                </div>     
             </form>
         </section>
+        <section class="contact-bottom">
+            <div></div>
+        </section>            
+        </div>
         
 
 

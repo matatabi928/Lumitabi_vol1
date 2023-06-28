@@ -536,7 +536,7 @@ h2.profile__h2::after {
   }
 
   .profile-color{
-    background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.3), rgba(255, 255, 0, 0.1));
+    background: #FEFCFA ;
   }
 
   /*--- breadcrumbs styling ---*/
@@ -563,9 +563,6 @@ text-shadow: 1px 1px 2px grey; /* 縁の色とぼかしの設定 */
 
    /* profile-linkのスタイル */
 
-   .profile-link {
-    background: linear-gradient(to left, rgba(253, 138, 228, 0.822), rgb(253, 253, 141));
-   }
 
 
    .button-wrapper {
@@ -730,7 +727,25 @@ text-shadow: 1px 1px 2px grey; /* 縁の色とぼかしの設定 */
     align-items: center;
     height: 350px;
   }
+
+
+    /* contact-cover */  /* contact-cover */
   
+  .required-label {
+    background-color: red;
+    color: white;
+    padding: 2px 5px;
+    margin-right: 5px;
+    font-size: 0.8em;
+  }
+
+  .any-label {
+    background-color: #c7c7c7;
+    color: white;
+    padding: 2px 5px;
+    margin-right: 5px;
+    font-size: 0.8em;
+  }
   
   
   /* contact-cover */
@@ -746,17 +761,43 @@ text-shadow: 1px 1px 2px grey; /* 縁の色とぼかしの設定 */
   height:220px;                                          /* 縦幅のサイズを指定  */
 }
 
- /* contact-form */
+ /* contact-block__tit */
+ .contact-block__txt >p {
+  text-align: center;
+  padding: 50px 0px;
+ }
 
-.contact-form {
+ /* contact-form */
+ .contact-form {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f8f8f8;
+  background-color: #FFFFFF;
   border-radius: 8px;
 }
 
-.contact-form input, .contact-form textarea {
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  padding: 5px 0px;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.contact-form .checkbox-group input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.form-container input, .form-container textarea {
   width: 100%;
   padding: 15px;
   margin-bottom: 10px;
@@ -765,7 +806,11 @@ text-shadow: 1px 1px 2px grey; /* 縁の色とぼかしの設定 */
   box-sizing: border-box;
 }
 
-.contact-form input[type="submit"] {
+.contact-form textarea {
+  height: 200px;
+}
+
+.form-container input[type="submit"] {
   background-color: #C6C124;
   color: white;
   border: none;
@@ -773,6 +818,26 @@ text-shadow: 1px 1px 2px grey; /* 縁の色とぼかしの設定 */
   transition: background-color 0.3s;
 }
 
-.contact-form input[type="submit"]:hover {
+.form-container input[type="submit"]:hover {
   background-color: #c9cd57;
+}
+
+
+.privacy-policy-agreement {
+  display: flex;
+  align-items: center;  /* flex-startからcenterへ変更 */
+  flex-direction: row;  /* 追加 */
+}
+
+.privacy-policy-agreement input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.privacy-policy-agreement label {
+  font-size: 0.9em;
+  padding: 20px 0px;
+}
+
+.contact-bottom {
+  padding: 50px;
 }
