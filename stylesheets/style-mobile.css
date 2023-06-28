@@ -118,6 +118,18 @@ h5 {
     transition: all 0.3s ease;
   }
 
+  .burger-menu.colorized div {
+    background-color: #000;  /* バーガーメニューの色を黒に変更 */
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+  .white-header .burger-menu div{
+    background-color: #000;
+  }
+
   .close-menu {
     position: absolute;
     right: 0px;

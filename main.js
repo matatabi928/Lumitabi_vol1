@@ -25,6 +25,8 @@ window.addEventListener('scroll', function() {
   let coverImageHeight = coverImage.offsetHeight;
   // ロゴ画像要素を取得します。
   let logoImg = document.getElementById('logo-img');
+  let burgerMenu = document.querySelector('.burger-menu');
+
 
   // "white-header" クラスが body 要素に追加されているかどうかをチェックします。これは、このページでヘッダーの背景色を白にするかどうかを決定します。
   if (document.body.classList.contains('white-header')) {
@@ -36,6 +38,7 @@ window.addEventListener('scroll', function() {
   if (window.pageYOffset > coverImageHeight) {
     header.classList.add('colorized');
     logoImg.classList.add('colorized');
+    burgerMenu.classList.add('colorized');
     let navItems = document.querySelectorAll('.header-nav-menu-item a');
     navItems.forEach(function(item) {
       item.classList.add('colorized');
@@ -44,6 +47,7 @@ window.addEventListener('scroll', function() {
     // スクロール位置がカバー画像の高さ未満の場合、ヘッダーの色を元に戻します。
     header.classList.remove('colorized');
     logoImg.classList.remove('colorized');
+    burgerMenu.classList.remove('colorized');
     let navItems = document.querySelectorAll('.header-nav-menu-item a');
     navItems.forEach(function(item) {
       item.classList.remove('colorized');
