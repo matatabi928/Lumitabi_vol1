@@ -13,6 +13,11 @@ h2 {
     font-size: 1.0rem;
 }
 
+h4 {
+  font-size: 1.3rem;
+}
+
+
 h5 {
     font-size: 1.5rem;
     padding: 10px;
@@ -203,21 +208,10 @@ h5 {
   }
 
 /*--- point styling ---*/
-.main-point-item-text >h4 {
-    font-size: 1.3rem;
-    padding: 15px 0px;
-    position: relative;
-}
-
-.main-point-item-text > h4::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -1px;
-  width: 95%;
-  height: 2px;
-  background-color: #FFE13F;
+.main-point_block__img img{
+  padding-bottom: 10px;
+  width: 35%;
+  height: 35%;
 }
 
 .main-point-item-text-list ul {
