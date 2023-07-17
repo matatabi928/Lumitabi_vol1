@@ -1,5 +1,5 @@
 window.addEventListener('scroll', function() {
-  var elements = document.querySelectorAll('.main-about-item-img-content > p, .main-about-item-img-content-text > p, .main-about-item-img img, h3,.main-pickup-item-text > p, .main-point-item-text, .main-point-item-img, .main-point_block__img, .main-point-item-text-list, .main-blog-item-content, .main-blog-item-text');
+  var elements = document.querySelectorAll('.main-about-item-img-content > p, .main-about-item-img-content-text > p, .main-about-item-img img,.main-pickup-item-text > p, .main-point-item-text, .main-point-item-img, .main-point_block__img, .main-point-item-text-list, .main-blog-item-content, .main-blog-item-text, .button-container');
 
   for(var i = 0; i < elements.length; i++) {
       var position = elements[i].getBoundingClientRect();
@@ -15,7 +15,7 @@ window.addEventListener('scroll', function() {
 });
 
 window.addEventListener('scroll', function() {
-  var elements = document.querySelectorAll('.main-pickup-item-1, .main-blog-item-1, .main-bot-item ,.scroll-to-top-btn');
+  var elements = document.querySelectorAll('.main-pickup-item-1, .main-blog-item-1, h3, .main-bot-item ,.scroll-to-top-btn');
 
   for(var i = 0; i < elements.length; i++) {
       var position = elements[i].getBoundingClientRect();
@@ -38,7 +38,7 @@ window.addEventListener('scroll', function() {
 
       // 要素がビューポート内に存在する場合
       if(position.top <= window.innerHeight && position.bottom >= 0) {
-          elements[i].style.animation = 'fadeIn 1s ease-out forwards';
+          elements[i].style.animation = 'fadeIn 2s ease-out forwards';
       } else {
           // 要素がビューポート外に存在する場合
           elements[i].style.animation = 'none';
@@ -68,6 +68,23 @@ window.onload = function() {
     }
   }
 };
+
+document.addEventListener("DOMContentLoaded", function() {
+  let titles = document.querySelectorAll(".h2-title");
+  let observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+          if(entry.isIntersecting) {
+              entry.target.classList.add("visible");
+          } else {
+              entry.target.classList.remove("visible"); // ビューポートから出たときにクラスを削除
+          }
+      });
+  }, { threshold: 0.1 });
+  
+  titles.forEach(title => {
+      observer.observe(title);
+  });
+});
 
 
 
