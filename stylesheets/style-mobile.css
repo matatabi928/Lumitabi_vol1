@@ -240,39 +240,36 @@ h5 {
   }
 
   /*--- bot styling ---*/
+  
   .main-bot{
     background-image: url('../images/trees.jpg');  /* 画像のURLを指定     */
     background-position:bottom;                     /* 画像の表示位置を指定 */
     background-size:cover;                                 /* 画像のサイズを指定  */
     background-attachment: scroll; /* 画像を固定する */
     width:100%;                                            /* 横幅のサイズを指定  */
+    height: 100%;
+  
   }
 
-  .main-bot-item p {
-    padding-top:50px ;
+  .main-bot-item > p {
+    padding:50px ;
     padding-left: 10px;
-    font-size: 1.7rem
+    font-size: 1.4rem;
+    margin-bottom: 0;
   }
 
   .scroll-to-top-btn {
-    height: 80px;
-    width: 80px; /* 幅と高さを同じに設定して円形にする */
+    height: 50px;
+    width: 50px; /* 幅と高さを同じに設定して円形にする */
+    border-radius: 10px; 
+    font-size: small;
+
   }
 
-  .scroll-to-top-btn-contenar{
-    padding-bottom: 50px;
-    display: flex;
-    justify-content: center;
+.scroll-to-top-btn i {
+  font-size: 10px; /* アイコンの大きさ */
+  margin-right: 3px; /* アイコンとテキストの間に余白を追加 */
 }
-
-
-
-.main-bot{
-    background-image: url('../images/trees.jpg');  /* 画像のURLを指定     */
-    background-size:cover;                                 /* 画像のサイズを指定  */
-    background-repeat: no-repeat;
-    width:100%;                                            /* 横幅のサイズを指定  */
-  }
   /*--- footer styling ---*/
 .footer {
     padding: 50px 20px 10px 20px;
