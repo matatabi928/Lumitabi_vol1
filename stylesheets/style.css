@@ -1,4 +1,15 @@
 /*--- Default styling ---*/
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -103,6 +114,8 @@ td{
 }
 
 .h2-title-polygon {
+font-family:Georgia, 'Times New Roman', Times, serif;
+color: #242424;
 text-align: center;
 padding: 2px 0px;
 background-color: #FFF9BD;  /* 薄い黄色 */
@@ -112,6 +125,8 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
 }
 
 .h2-title {
+font-family:Georgia, 'Times New Roman', Times, serif;
+color: #242424;
 padding: 30px 0px;
 position: relative;
 }
@@ -236,10 +251,36 @@ position: relative;
 
 
 /*--- Main hero ---*/
+@keyframes fadeInMove {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadeIn {
+  opacity: 0;
+  animation: fadeInMove 0.5s forwards;
+}
+
+h1 {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
 
  .main-hero {
     padding-bottom: 20px;
     height: 765px;
+    animation: fadeIn 1s;
+
  }
 
  .main-img{
@@ -256,6 +297,14 @@ position: relative;
   text-shadow: 1px 1px 2px grey; /* 縁の色とぼかしの設定 */
 }
 
+.main-hero-highlight-content {
+  animation: fadeInUp 3s ease-out forwards;
+}
+
+.main-hero-highlight-links {
+  animation: fadeInUp 3s ease-out forwards;
+}
+
  .main-hero-highlight-links a{
     background: linear-gradient(to left, rgba(253, 138, 228, 0.822), rgb(253, 253, 141));
     color: black;
@@ -263,14 +312,14 @@ position: relative;
     border-radius: 4px;
     cursor: pointer;
     padding: 10px 20px;
-    
  }
 
 /*--- Main about ---*/
 
  .main-about-item-img-content > p {
  color: #C6C124;  /* 暗めの黄色 */
- }
+}
+
 
  .main-about-item-img {
   text-align: center;
@@ -328,12 +377,32 @@ position: relative;
 
 .main-point-item-text {
     text-align: center;
+
 }
 
 .main-point_block__img img{
   padding-bottom: 20px;
   width: 20%;
   height: 20%;
+}
+
+.main-point-item-text-list ul {
+  padding: 0.5em 1em 0.5em 2.3em;
+  position: relative;
+}
+
+
+.main-point-item-text-list ul li {
+  line-height: 1.5;
+  padding: 0.5em 0;
+  list-style-type: none!important;/*ポチ消す*/
+}
+
+.main-point-item-text-list ul li:before {
+  content: "\f00c";
+  position: absolute;
+  left : 1em; /*左端からのアイコンまで*/
+  color: #ffb03f; /*アイコン色*/
 }
 
 /*--- Main blog ---*/

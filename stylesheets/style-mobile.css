@@ -104,6 +104,7 @@ h5 {
 .header-nav-menu-item > a:hover ,
 .header-nav-menu-item > a:focus {
   color: #c9cd57;
+  
 }
   .burger-menu, .close-menu {
     display: block;

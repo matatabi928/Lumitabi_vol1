@@ -1,3 +1,75 @@
+window.addEventListener('scroll', function() {
+  var elements = document.querySelectorAll('.main-about-item-img-content > p, .main-about-item-img-content-text > p, .main-about-item-img img, h3,.main-pickup-item-text > p, .main-point-item-text, .main-point-item-img, .main-point_block__img, .main-point-item-text-list, .main-blog-item-content, .main-blog-item-text');
+
+  for(var i = 0; i < elements.length; i++) {
+      var position = elements[i].getBoundingClientRect();
+
+      // 要素がビューポート内に存在する場合
+      if(position.top <= window.innerHeight && position.bottom >= 0) {
+          elements[i].style.animation = 'fadeInUp 1s ease-out forwards';
+      } else {
+          // 要素がビューポート外に存在する場合
+          elements[i].style.animation = 'none';
+      }
+  }
+});
+
+window.addEventListener('scroll', function() {
+  var elements = document.querySelectorAll('.main-pickup-item-1, .main-blog-item-1, .main-bot-item ,.scroll-to-top-btn');
+
+  for(var i = 0; i < elements.length; i++) {
+      var position = elements[i].getBoundingClientRect();
+
+      // 要素がビューポート内に存在する場合
+      if(position.top <= window.innerHeight && position.bottom >= 0) {
+          elements[i].style.animation = 'fadeInUp 0.5s ease-out forwards';
+      } else {
+          // 要素がビューポート外に存在する場合
+          elements[i].style.animation = 'none';
+      }
+  }
+});
+
+window.addEventListener('scroll', function() {
+  var elements = document.querySelectorAll('.h2-title-polygon, .h2-title');
+
+  for(var i = 0; i < elements.length; i++) {
+      var position = elements[i].getBoundingClientRect();
+
+      // 要素がビューポート内に存在する場合
+      if(position.top <= window.innerHeight && position.bottom >= 0) {
+          elements[i].style.animation = 'fadeIn 1s ease-out forwards';
+      } else {
+          // 要素がビューポート外に存在する場合
+          elements[i].style.animation = 'none';
+      }
+  }
+});
+
+window.onload = function() {
+  var title = document.getElementById('myTitle');
+  var textNodes = Array.from(title.childNodes);
+  title.textContent = "";
+
+  var count = 0;
+  for (let textNode of textNodes) {
+    if (textNode.nodeName === "#text") {
+      var text = textNode.nodeValue;
+      for (let i = 0; i < text.length; i++) {
+        let newLetter = document.createElement('span');
+        newLetter.textContent = text[i];
+        newLetter.style.animationDelay = `${count * 0.1}s`;
+        newLetter.classList.add('fadeIn');
+        title.appendChild(newLetter);
+        count++;
+      }
+    } else if (textNode.nodeName === "BR") {
+      title.appendChild(textNode.cloneNode());
+    }
+  }
+};
+
+
 
 //バーガーメニューアイコンがクリックされたときの動作を定義
 document.querySelector('.burger-menu').addEventListener('click', () => {
