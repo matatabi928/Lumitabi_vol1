@@ -42,7 +42,11 @@ h3 {
 }
 
 h4 {
-    font-size: 1.5rem;
+  font-size: 1.925rem;
+  font-weight: 600;
+  line-height: 45px;
+    color: #C6C124;  /* 暗めの黄色 */
+
 }
 
 h5.home__h5 {
@@ -388,9 +392,6 @@ h1 {
     padding: 20px;
  }
 /*--- Main point ---*/
-.main-point {
-    padding-bottom: 30px;
- }
 
 .button-contact {
     display: inline-block;
@@ -400,10 +401,6 @@ h1 {
     padding: 10px 20px;
   }
 
-.main-point-item-text {
-    text-align: center;
-
-}
 
 .main-point_block__img img{
   padding-bottom: 20px;

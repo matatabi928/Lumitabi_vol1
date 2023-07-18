@@ -70,6 +70,18 @@ h1 {
     padding: 0px 25px;
 }
 /*--- Point styling ---*/
+h4 {
+  text-align: center;
+}
+
+.main-point {
+  padding: 30px　0px;
+}
+
+.main-point-item-text{
+text-align: center;
+}
+
 .main-point-item-content {
     display: flex;
     align-items: center;

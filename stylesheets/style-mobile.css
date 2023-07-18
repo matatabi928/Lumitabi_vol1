@@ -10,7 +10,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.0rem;
+    font-size: 1.1rem;
 }
 
 h4 {
@@ -38,6 +38,7 @@ h5 {
     clip-path: polygon(0 0, 100% 0, 75% 100%, 25% 100%);  /* 上底の方が下底より大きい台形 */
     width: 60%;  /* 横幅を画面の三分の一に変更 */
     }
+
 
 /*--- Header styling ---*/
 

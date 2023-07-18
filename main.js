@@ -4,12 +4,9 @@ window.addEventListener('scroll', function() {
   for(var i = 0; i < elements.length; i++) {
       var position = elements[i].getBoundingClientRect();
 
-      // 要素がビューポート内に存在する場合
-      if(position.top <= window.innerHeight && position.bottom >= 0) {
+      if(position.top <= window.innerHeight && position.bottom >= 0 && !elements[i].classList.contains('animated')) {
           elements[i].style.animation = 'fadeInUp 1s ease-out forwards';
-      } else {
-          // 要素がビューポート外に存在する場合
-          elements[i].style.animation = 'none';
+          elements[i].classList.add('animated');
       }
   }
 });
@@ -20,12 +17,9 @@ window.addEventListener('scroll', function() {
   for(var i = 0; i < elements.length; i++) {
       var position = elements[i].getBoundingClientRect();
 
-      // 要素がビューポート内に存在する場合
-      if(position.top <= window.innerHeight && position.bottom >= 0) {
+      if(position.top <= window.innerHeight && position.bottom >= 0 && !elements[i].classList.contains('animated')) {
           elements[i].style.animation = 'fadeInUp 0.5s ease-out forwards';
-      } else {
-          // 要素がビューポート外に存在する場合
-          elements[i].style.animation = 'none';
+          elements[i].classList.add('animated');
       }
   }
 });
@@ -36,38 +30,12 @@ window.addEventListener('scroll', function() {
   for(var i = 0; i < elements.length; i++) {
       var position = elements[i].getBoundingClientRect();
 
-      // 要素がビューポート内に存在する場合
-      if(position.top <= window.innerHeight && position.bottom >= 0) {
+      if(position.top <= window.innerHeight && position.bottom >= 0 && !elements[i].classList.contains('animated')) {
           elements[i].style.animation = 'fadeIn 2s ease-out forwards';
-      } else {
-          // 要素がビューポート外に存在する場合
-          elements[i].style.animation = 'none';
+          elements[i].classList.add('animated');
       }
   }
 });
-
-window.onload = function() {
-  var title = document.getElementById('myTitle');
-  var textNodes = Array.from(title.childNodes);
-  title.textContent = "";
-
-  var count = 0;
-  for (let textNode of textNodes) {
-    if (textNode.nodeName === "#text") {
-      var text = textNode.nodeValue;
-      for (let i = 0; i < text.length; i++) {
-        let newLetter = document.createElement('span');
-        newLetter.textContent = text[i];
-        newLetter.style.animationDelay = `${count * 0.1}s`;
-        newLetter.classList.add('fadeIn');
-        title.appendChild(newLetter);
-        count++;
-      }
-    } else if (textNode.nodeName === "BR") {
-      title.appendChild(textNode.cloneNode());
-    }
-  }
-};
 
 document.addEventListener("DOMContentLoaded", function() {
   let titles = document.querySelectorAll(".h2-title");
@@ -75,8 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
       entries.forEach(entry => {
           if(entry.isIntersecting) {
               entry.target.classList.add("visible");
-          } else {
-              entry.target.classList.remove("visible"); // ビューポートから出たときにクラスを削除
+              observer.unobserve(entry.target); // Once the element is visible, stop observing it
           }
       });
   }, { threshold: 0.1 });
@@ -85,6 +52,10 @@ document.addEventListener("DOMContentLoaded", function() {
       observer.observe(title);
   });
 });
+
+
+
+
 
 
 
