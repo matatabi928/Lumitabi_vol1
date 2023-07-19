@@ -1,6 +1,6 @@
 @media (min-width: 768px) and (max-width: 1024px) {
 
-    h1 {
+    .hero__highlight-title {
         margin-top: 50px;
         font-size: 2.2rem;
         line-height: 60px;
@@ -20,34 +20,34 @@
     margin-left: 10px;
 }
 
-.header-nav-menu {
+.header-nav__menu {
     margin-right: 20px;
 }
 
-.header-nav-menu-item {
+.header-nav__menu__item {
     margin-left: 25px;
 }
 
 /*--- Hero styling ---*/
 
-.main-hero {
+.hero {
     background-color: gainsboro;
     padding-bottom: 20px;
     height: 555px;
  }
 
-.main-img{
+.hero__img{
     height: 555px;
 }
 
-.main-hero-highlight {
+.hero__highlight {
     margin-left: 50px;
 }
 
-.main-hero-highlight-content {
+.hero__highlight-content {
     margin-top: 130px;
 }
-.main-hero-highlight-links {
+.btn.btn--gradient-pink {
     margin-top: 40px;
     margin-left: 50px;
 }

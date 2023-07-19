@@ -2,7 +2,7 @@
 /* スマートフォン（縦向き） */
 @media screen and (max-width: 48em) and (orientation: portrait) {
 
-h1 {
+.hero__highlight-title {
     font-size: 1.9rem;
     padding-left: 10px;
     padding-top: 30px;
@@ -10,7 +10,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.1rem;
+    font-size: 1.0rem;
 }
 
 h4 {
@@ -42,7 +42,7 @@ h5 {
 
 /*--- Header styling ---*/
 
-.main-img{
+.hero__img{
     background-image: url('../images/dreamy-universal-light2.jpg');  /* 画像のURLを指定     */
     background-position:left top;                     /* 画像の表示位置を指定 */
     background-size:cover;                                 /* 画像のサイズを指定  */
@@ -51,11 +51,11 @@ h5 {
     padding-top: 53px; 
 }
 
-.main-hero-highlight-content {
+.hero__highlight-content {
     margin-top: 385px;
     padding-left: 30px;
 }
-.main-hero-highlight-links {
+.btn.btn--gradient-pink {
     display: flex;
     justify-content: right;
     margin-top: 30px;
@@ -79,7 +79,7 @@ h5 {
     border-radius: 20px; /* 全ての角を10pxで丸く */
 }
 
-  .header-nav-menu {
+  .header-nav__menu {
     list-style: none;
     text-align: center; /* 追加：テキストを中央に寄せる */
     width: 100%; /* 追加：全画面に広げる */
@@ -89,21 +89,21 @@ h5 {
     align-items: center; /* 追加：メニューを中央に寄せる */
   }
 
-  .header-nav-menu-item {
+  .header-nav__menu__item {
     margin-bottom: 20px; /* 追加：メニュー項目間にスペースを追加 */
     display: block;
     margin-right: 15px;
   }
 
-  .header-nav-menu-item a {
+  .header-nav__menu__item a {
     color: #242424; /* 文字の色を黒に変更 */
     font-weight: 600;
     text-shadow: none;
 
 }
 
-.header-nav-menu-item > a:hover ,
-.header-nav-menu-item > a:focus {
+.header-nav__menu__item > a:hover ,
+.header-nav__menu__item > a:focus {
   color: #c9cd57;
   
 }

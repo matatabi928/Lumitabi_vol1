@@ -1,0 +1,128 @@
+# Query: header-nav-menu
+# ContextLines: 1
+
+43 件の結果 - 9 ファイル
+
+contact.html:
+  41              <!-- メニュー項目はここに -->
+  42:                 <ul class="header-nav__menu__>
+  43:                     <li class="header-nav__menu__item"><a href="index.html">ホーム</a></li>
+  44:                     <li class="header-nav__menu__item"><a href="">サービス紹介</a></li>
+  45:                     <li class="header-nav__menu__item"><a href="profile.html">プロフィール</a></li>
+  46:                     <li class="header-nav__menu__item"><a href="">ブログ</a></li>
+  47:                     <li class="header-nav__menu__item"><a href="contact.html">お問い合わせ</a></li>
+  48                  </ul>
+
+index.html:
+  40              <!-- メニュー項目はここに -->
+  41:                 <ul class="header-nav__menu__>
+  42:                     <li class="header-nav__menu__item"><a data-text="Home" href="index.html">Home</a></li>
+  43:                     <li class="header-nav__menu__item"><a data-text="Service" href="">Service</a></li>
+  44:                     <li class="header-nav__menu__item"><a data-text="Profile" href="profile.html">Profile</a></li>
+  45:                     <li class="header-nav__menu__item"><a data-text="Blog" href="">Blog</a></li>
+  46:                     <li class="header-nav__menu__item"><a data-text="Contact" href="contact.html">Contact</a></li>
+  47                  </ul>
+
+main.js:
+  41      burgerMenu.classList.add('colorized');
+  42:     let navItems = document.querySelectorAll('.header-nav__menu__item a');
+  43      navItems.forEach(function(item) {
+
+  50      burgerMenu.classList.remove('colorized');
+  51:     let navItems = document.querySelectorAll('.header-nav__menu__item a');
+  52      navItems.forEach(function(item) {
+
+profile.html:
+  42              <!-- メニュー項目はここに -->
+  43:                 <ul class="header-nav__menu__>
+  44:                     <li class="header-nav__menu__item"><a href="index.html">ホーム</a></li>
+  45:                     <li class="header-nav__menu__item"><a href="">サービス紹介</a></li>
+  46:                     <li class="header-nav__menu__item"><a href="profile.html">プロフィール</a></li>
+  47:                     <li class="header-nav__menu__item"><a href="">ブログ</a></li>
+  48:                     <li class="header-nav__menu__item"><a href="contact.html">お問い合わせ</a></li>
+  49                  </ul>
+
+stylesheets/style-laptop.css:
+   7  
+   8: .header-nav__menu__{
+   9      margin-right: 50px;
+
+  11  
+  12: .header-nav__menu__item {
+  13      margin-left: 30px;
+
+stylesheets/style-mobile-l.css:
+  35  
+  36:   .header-nav__menu__{
+  37      list-style: none;
+
+  45  
+  46:   .header-nav__menu__item {
+  47      margin-bottom: 20px; /* 追加：メニュー項目間にスペースを追加 */
+
+  51  
+  52:   .header-nav__menu__item a {
+  53      color: #242424; /* 文字の色を黒に変更 */
+
+  58  
+  59: .header-nav__menu__item > a:hover ,
+  60: .header-nav__menu__item > a:focus {
+  61    color: #c9cd57;
+
+stylesheets/style-mobile.css:
+   81  
+   82:   .header-nav__menu__{
+   83      list-style: none;
+
+   91  
+   92:   .header-nav__menu__item {
+   93      margin-bottom: 20px; /* 追加：メニュー項目間にスペースを追加 */
+
+   97  
+   98:   .header-nav__menu__item a {
+   99      color: #242424; /* 文字の色を黒に変更 */
+
+  104  
+  105: .header-nav__menu__item > a:hover ,
+  106: .header-nav__menu__item > a:focus {
+  107    color: #c9cd57;
+
+stylesheets/style-tablet.css:
+  22  
+  23: .header-nav__menu__{
+  24      margin-right: 20px;
+
+  26  
+  27: .header-nav__menu__item {
+  28      margin-left: 25px;
+
+stylesheets/style.css:
+  222    }
+  223:   .header-nav__menu__{
+  224      display: flex;
+
+  227  
+  228:   .header-nav__menu__item a {
+  229      font-family: Georgia, 'Times New Roman', Times, serif;
+
+  236  
+  237: .header-nav__menu__item a:hover {
+  238      background-image: linear-gradient(90deg, rgb(126, 34, 121), rgb(255, 0, 72), rgb(255, 195, 90), rgb(253, 253, 141), rgb(253, 138, 228)); /* グラデーションの初期設定 */
+
+  249  
+  250: .colorized .header-nav__menu__item a {
+  251    /* スクロール位置に応じた色へ変更 */
+
+  257  
+  258: .colorized .header-nav__menu__item a:hover ,
+  259: .colorized .header-nav__menu__item a:focus {
+  260    background-image: none; /* 背景画像を削除 */
+
+  281  /* .white-header クラスが body 要素に追加されているページでは、ナビゲーションメニューのリンクの文字色を灰色に設定します。 */
+  282: .white-header .header-nav__menu__item a {
+  283    color: #242424;
+
+  293  /* .white-header クラスが body 要素に追加されているページでは、ナビゲーションメニューのリンクがホバーされたときの文字色を変更します。 */
+  294: .white-header .header-nav__menu__item > a:hover,
+  295: .white-header .header-nav__menu__item > a:focus {
+  296    color: #c9cd57; /* この色はあなたの要件に合わせて変更できます。 */

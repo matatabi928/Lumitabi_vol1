@@ -5,30 +5,30 @@
     margin-left: 10px;
 }
 
-.header-nav-menu {
+.header-nav__menu {
     margin-right: 50px;
 }
 
-.header-nav-menu-item {
+.header-nav__menu__item {
     margin-left: 30px;
 }
 
 /*--- Hero styling ---*/
 
-h1 {
+.hero__highlight-title {
     margin-top: 80px;
     
 }
 
-.main-hero-highlight {
+.hero__highlight {
     margin-left: 50px;
     font-size: 1.3rem;
 }
 
-.main-hero-highlight-content {
+.hero__highlight-content {
     margin-top: 165px;
 }
-.main-hero-highlight-links {
+.btn.btn--gradient-pink {
     margin-top: 80px;
     margin-left: 50px;
 }

@@ -20,7 +20,7 @@ document.querySelector('.close-menu').addEventListener('click', () => {
 window.addEventListener('scroll', function() {
   // ヘッダー要素とカバー画像要素を取得します。
   let header = document.querySelector('.header');
-  let coverImage = document.querySelector('.main-img');
+  let coverImage = document.querySelector('.hero__img');
   // カバー画像の高さを取得します。
   let coverImageHeight = coverImage.offsetHeight;
   // ロゴ画像要素を取得します。
@@ -39,7 +39,7 @@ window.addEventListener('scroll', function() {
     header.classList.add('colorized');
     logoImg.classList.add('colorized');
     burgerMenu.classList.add('colorized');
-    let navItems = document.querySelectorAll('.header-nav-menu-item a');
+    let navItems = document.querySelectorAll('.header-nav__menu__item a');
     navItems.forEach(function(item) {
       item.classList.add('colorized');
     });
@@ -48,7 +48,7 @@ window.addEventListener('scroll', function() {
     header.classList.remove('colorized');
     logoImg.classList.remove('colorized');
     burgerMenu.classList.remove('colorized');
-    let navItems = document.querySelectorAll('.header-nav-menu-item a');
+    let navItems = document.querySelectorAll('.header-nav__menu__item a');
     navItems.forEach(function(item) {
       item.classList.remove('colorized');
     });

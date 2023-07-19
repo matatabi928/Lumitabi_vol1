@@ -1,6 +1,6 @@
 /* スマートフォン（横向き） */
 @media screen and (max-width: 60em) and (orientation: landscape) {
-    h1 {
+    .hero__highlight-title {
         margin-top: 50px;
         font-size: 2.2rem;
         line-height: 60px;
@@ -33,7 +33,7 @@
     border-radius: 20px; /* 全ての角を10pxで丸く */
 }
 
-  .header-nav-menu {
+  .header-nav__menu {
     list-style: none;
     text-align: center; /* 追加：テキストを中央に寄せる */
     width: 100%; /* 追加：全画面に広げる */
@@ -43,21 +43,21 @@
     align-items: center; /* 追加：メニューを中央に寄せる */
   }
 
-  .header-nav-menu-item {
+  .header-nav__menu__item {
     margin-bottom: 20px; /* 追加：メニュー項目間にスペースを追加 */
     display: block;
     margin-right: 15px;
   }
 
-  .header-nav-menu-item a {
+  .header-nav__menu__item a {
     color: #242424; /* 文字の色を黒に変更 */
     font-weight: 600;
     text-shadow: none;
 
 }
 
-.header-nav-menu-item > a:hover ,
-.header-nav-menu-item > a:focus {
+.header-nav__menu__item > a:hover ,
+.header-nav__menu__item > a:focus {
   color: #c9cd57;
 }
   .burger-menu, .close-menu {
@@ -126,24 +126,24 @@
   }
 /*--- Hero styling ---*/
 
-.main-hero {
+.hero {
     background-color: gainsboro;
     padding-bottom: 20px;
     height: 555px;
  }
 
-.main-img{
+.hero__img{
     height: 555px;
 }
 
-.main-hero-highlight {
+.hero__highlight {
     margin-left: 50px;
 }
 
-.main-hero-highlight-content {
+.hero__highlight-content {
     margin-top: 130px;
 }
-.main-hero-highlight-links {
+.btn.btn--gradient-pink {
     margin-top: 40px;
     margin-left: 50px;
 }

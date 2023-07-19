@@ -20,10 +20,6 @@
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.png">
 
-    <script src="no_fouc.js"></script>
-
-
-
 </head>
 <body>
     <header class="header">
@@ -42,31 +38,31 @@
         </div>
             <nav class="header-nav">
             <!-- メニュー項目はここに -->
-                <ul class="header-nav-menu">
-                    <li class="header-nav-menu-item"><a data-text="Home" href="index.html">Home</a></li>
-                    <li class="header-nav-menu-item"><a data-text="Service" href="">Service</a></li>
-                    <li class="header-nav-menu-item"><a data-text="Profile" href="profile.html">Profile</a></li>
-                    <li class="header-nav-menu-item"><a data-text="Blog" href="">Blog</a></li>
-                    <li class="header-nav-menu-item"><a data-text="Contact" href="contact.html">Contact</a></li>
+                <ul class="header-nav__menu">
+                    <li class="header-nav__menu__item"><a data-text="Home" href="index.html">Home</a></li>
+                    <li class="header-nav__menu__item"><a data-text="Service" href="">Service</a></li>
+                    <li class="header-nav__menu__item"><a data-text="Profile" href="profile.html">Profile</a></li>
+                    <li class="header-nav__menu__item"><a data-text="Blog" href="">Blog</a></li>
+                    <li class="header-nav__menu__item"><a data-text="Contact" href="contact.html">Contact</a></li>
                 </ul>
             </nav>
     </header>
 
     <main class="main">
-        <section class="main-hero">
-            <div class="main-img">
-            <div class="main-hero-highlight">
-                <h1 id="myTitle">ビジネスを成功へ導く<br>光り輝くデザインの世界へ</h1>
-                    <div class="main-hero-highlight-content">
+        <section class="hero">
+            <div class="hero__img">
+            <div class="hero__highlight">
+                <h1 id="myTitle" class="hero__highlight-title">ビジネスを成功へ導く<br>光り輝くデザインの世界へ</h1>
+                    <div class="hero__highlight-content">
                         <p>美しく使いやすいウェブサイトを提供します。<br>
                            心に響く感動の光景を未来に。<br>
                            さあ、カタにハマらない新しいデザインへ。</p>
                        </div>
                     </div>
-                   <div class="main-hero-highlight-links">
+                   <div class="btn btn--gradient-pink">
                        <a href="" target="_blank">資料ダウンロード</a>
                    </div>
-               <figure class="main-hero-img"></figure>
+               <figure class="hero-img"></figure>
             </div>
             </div>
         </section>
@@ -83,7 +79,7 @@
                             お客様のビジネスを成長する<br>
                             お手伝いをしています。<br></p>
                         <div class="main-about-item-img-content-text">
-                         <p>ウェブデザインには、デザインの美しさだけではなく、ユーザビリティやマーケティングの視点からの考慮が必要です。私たちは、豊富な実績と経験を持ち合わせており、お客様のニーズに合わせてカスタマイズを実装したウェブサイトを制作することで、ビジネスをより一層成長させることができます。</p>
+                        <p>ウェブデザインには、デザインの美しさだけではなく、ユーザビリティやマーケティングの視点からの考慮が必要です。私たちは、豊富な実績と経験を持ち合わせており、お客様のニーズに合わせてカスタマイズを実装したウェブサイトを制作することで、ビジネスをより一層成長させることができます。</p>
                         </div>
                     </div>
                 </div>
@@ -94,7 +90,7 @@
             <div class="container">
                 <div class="main-pickup-items">
                     <div class="main-pickup-item">
-                        <figure class="main-pickup-item-1">
+                        <figure class="main-pickup-item-1 effect-fade">
                             <img src="images/service_1.png" alt="service_1">
                         </figure>
                         <div class="main-pickup-item-text">
@@ -106,7 +102,7 @@
                         </div>
                     </div>
                     <div class="main-pickup-item">
-                        <figure class="main-pickup-item-1">
+                        <figure class="main-pickup-item-1 effect-fade">
                             <img src="images/service_2.png" alt="service_2">
                         </figure>
                         <div class="main-pickup-item-text">
@@ -118,7 +114,7 @@
                         </div>
                     </div>
                     <div class="main-pickup-item">
-                        <figure class="main-pickup-item-1">
+                        <figure class="main-pickup-item-1 effect-fade">
                             <img src="images/service_3.png" alt="service_3">
                         </figure>
                         <div class="main-pickup-item-text">
@@ -130,11 +126,11 @@
                         </div>
                     </div>
                     <div class="main-pickup-item">
-                        <figure class="main-pickup-item-1">
+                        <figure class="main-pickup-item-1 effect-fade">
                             <img src="images/service_4.png" alt="service_4">
                         </figure>
                         <div class="main-pickup-item-text">
-                            <h3>ビジネススキル研修</h3>
+                            <h3 >ビジネススキル研修</h3>
                             <p>コミュニケーション能力やプレゼンテーション、マネジメントスキルなど、ビジネスに必要なスキルを鍛えます。</p>
                             <div class="button-container">
                                 <a href="service.html" class="button-detail-1">もっと詳しく見てみる</a>
@@ -162,7 +158,7 @@
                             <img src="../Lumitabi_vol1/images/check.png" alt="point">
                         </figure>
                         <div class="list-button-container"> <!-- 追加したdiv -->
-                            <div class="main-point-item-text-list">
+                            <div class="main-point-item-text-list effect-fade">
                                 <ul>
                                     <li>情報収集やサービス説明だけでもお気軽に。</li>
                                     <li>無料デザイン案を提示します。</li>
@@ -277,6 +273,7 @@
             </div>
         </div>
     </footer>
+    <script src="no_fouc.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

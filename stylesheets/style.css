@@ -10,6 +10,24 @@
   }
 }
 
+.effect-fade {
+  opacity: 0;
+  transform: translate(0, 60px);
+  transition: all 800ms;
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  opacity: 0;
+}
+
+.effect-fade.effect-scroll {
+  opacity: 1;
+  transform: translate(0, 0);
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  opacity: 1;
+}
+
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -25,12 +43,17 @@ body {
 }
 
 h1 {
-    color: #F9F9F9;
-    text-shadow: 1px 1px 2px #000000; /* 縁の色とぼかしの設定 */
-    margin-top: 0;
+
     font-size: 3.4rem;
-    font-weight: 600;
-    line-height: 80px;
+
+}
+
+.hero__highlight-title {
+  color: #F9F9F9;
+  text-shadow: 1px 1px 2px #000000; /* 縁の色とぼかしの設定 */
+  margin-top: 0;
+  font-weight: 600;
+  line-height: 80px;
 }
 
 h2 {
@@ -202,12 +225,12 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
     max-height: 48px;
     padding-left: 20px;
   }
-  .header-nav-menu {
+  .header-nav__menu {
     display: flex;
     list-style: none;
   }
 
-  .header-nav-menu-item a {
+  .header-nav__menu__item a {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white; /* 初期の文字色を変更 */
     font-size: 1rem;
@@ -216,7 +239,7 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
     transition: 0.4s; /* グラデーションの遷移に時間を設ける */
 }
 
-.header-nav-menu-item a:hover {
+.header-nav__menu__item a:hover {
     background-image: linear-gradient(90deg, rgb(126, 34, 121), rgb(255, 0, 72), rgb(255, 195, 90), rgb(253, 253, 141), rgb(253, 138, 228)); /* グラデーションの初期設定 */
     background-size: 200% auto; /* グラデーションが画面外まで広がるように設定 */
     -webkit-background-clip: text;
@@ -229,7 +252,7 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
   background-color: white; /* 色付きの背景色 */
 }
 
-.colorized .header-nav-menu-item a {
+.colorized .header-nav__menu__item a {
   /* スクロール位置に応じた色へ変更 */
   color: #242424; /* 赤色に変更 */
   text-shadow: 1px 1px 1px white; /* 縁の色とぼかしの設定 */
@@ -237,8 +260,8 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
   transition: none; /* トランジションを無効にする */
 }
 
-.colorized .header-nav-menu-item a:hover ,
-.colorized .header-nav-menu-item a:focus {
+.colorized .header-nav__menu__item a:hover ,
+.colorized .header-nav__menu__item a:focus {
   background-image: none; /* 背景画像を削除 */
   background-image: none; /* 背景画像を削除 */
   background-size: auto; /* 背景サイズをデフォルトにする */
@@ -261,7 +284,7 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
 }
 
 /* .white-header クラスが body 要素に追加されているページでは、ナビゲーションメニューのリンクの文字色を灰色に設定します。 */
-.white-header .header-nav-menu-item a {
+.white-header .header-nav__menu__item a {
   color: #242424;
   /* テキストに白色の影を追加します。 */
   text-shadow: 1px 1px 1px white;
@@ -273,8 +296,8 @@ width: 33%;  /* 横幅を画面の三分の一に変更 */
 }
 
 /* .white-header クラスが body 要素に追加されているページでは、ナビゲーションメニューのリンクがホバーされたときの文字色を変更します。 */
-.white-header .header-nav-menu-item > a:hover,
-.white-header .header-nav-menu-item > a:focus {
+.white-header .header-nav__menu__item > a:hover,
+.white-header .header-nav__menu__item > a:focus {
   color: #c9cd57; /* この色はあなたの要件に合わせて変更できます。 */
 }
 
@@ -305,14 +328,14 @@ h1 {
   100% {opacity: 1;}
 }
 
- .main-hero {
+ .hero {
     padding-bottom: 20px;
     height: 765px;
     animation: fadeIn 1s;
 
  }
 
- .main-img{
+ .hero__img{
     background-image: url('../images/dreamy-universal-light.jpg');  /* 画像のURLを指定     */
     background-position:left top;                     /* 画像の表示位置を指定 */
     background-size:cover;                                 /* 画像のサイズを指定  */
@@ -321,20 +344,20 @@ h1 {
     padding-top: 53px; 
 }
 
-.main-hero-highlight-content {
+.hero__highlight-content {
   color: #F9F9F9;
   text-shadow: 1px 1px 2px grey; /* 縁の色とぼかしの設定 */
 }
 
-.main-hero-highlight-content {
+.hero__highlight-content {
   animation: fadeInUp 3s ease-out forwards;
 }
 
-.main-hero-highlight-links {
+.btn.btn--gradient-pink {
   animation: fadeInUp 3s ease-out forwards;
 }
 
- .main-hero-highlight-links a{
+ .btn.btn--gradient-pink a{
     background: linear-gradient(to left, rgba(253, 138, 228, 0.822), rgb(253, 253, 141));
     color: black;
     border: none;
@@ -677,7 +700,7 @@ h2.profile__h2::after {
   letter-spacing: 0.2em; /* 文字間隔を0.2emに設定 */
 }
 
-.main-hero-highlight-content {
+.hero__highlight-content {
 color: #F9F9F9;
 text-shadow: 1px 1px 2px grey; /* 縁の色とぼかしの設定 */
 }
